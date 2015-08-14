@@ -1,13 +1,15 @@
 <div class="workPage">
   <h3>Check Out Some of My Work! <br> <span>(click on image to view app)</span></h3>
   <div class="accordionDiv">
-      <accordion>
+      <accordion close-others="oneAtATime">
         <accordion-group>
-            <accordion-heading>
-                Just For The Halibut! <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+            <accordion-heading ng-click="isopen=!isopen">
+              <div class="">
+                Just For The Halibut!
+              </div>
             </accordion-heading>
             <a href="http://justhalibut.herokuapp.com/#/"><img class="wow tada"  src="https://fishandkids.msc.org/en/play/fishyfactfiles/halibut/@@images/f3c71f4b-3e63-403c-87ec-ed41b81af91b.png" alt="" /></a>
-            <div class="wow lightSpeedIn">
+            <div >
               <h4>Background:</h4>
               <p>
                 This app served as my final project for the Font-End Engineering course at The Iron Yard. It was a group project that consisted of a classmate (Trevor Glass) and myself.
@@ -24,15 +26,21 @@
               <p>
                 Angular, Node, Transloadit, Angular Bootstrap, Angular Google-Maps, ngGeolocation, Font-Awesome, Underscore, Moment, Food2Fork API, Javascript, SASS, CSS, HTML
               </p>
+              <h4>Find on Github:</h4>
+              <p>
+                <a href="https://github.com/JustForTheHalibut/JustForTheHalibut">Just For The Halibut</a>
+              </p>
             </div>
 
         </accordion-group>
         <accordion-group>
-            <accordion-heading>
-                PlaceMe <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+            <accordion-heading ng-click="isopen=!isopen">
+              <div class="">
+                PlaceMe
+              </div>
             </accordion-heading>
             <a href="http://tiffanyrossyrobinson.github.io/tango/"><h3><i class="wow tada fa fa-street-view">PlaceMe</i></h3></a>
-            <div class="wow lightSpeedIn">
+            <div>
               <h4>Background:</h4>
               <p>
                 This app was the second group project I particapated in the Front-End Engineering program with the Iron Yard. The group memebers were classmates Mark Kimball, Mitchell Hunt, and myself.
@@ -49,14 +57,20 @@
               <p>
                 Jquery, Javascript, Bootstrap, Underscore, Font-Awesome, CSS, HTML
               </p>
+              <h4>Find on Github:</h4>
+              <p>
+                <a href="https://github.com/tiffanyRossyRobinson/tango">Place Me</a>
+              </p>
             </div>
         </accordion-group>
         <accordion-group>
-            <accordion-heading>
-                Powell Peralta <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+            <accordion-heading ng-click="isopen=!isopen">
+              <div class="">
+                Powell Peralta
+              </div>
             </accordion-heading>
             <a href="http://tiffanyrossyrobinson.github.io/DayFourResponsive/"><img class="wow tada" src="http://tailtap.com/Sales/product_images/y/520/IMG_6670__86122_zoom.jpg" alt="" /></a>
-            <div class="wow lightSpeedIn">
+            <div>
               <h4>Background:</h4>
               <p>
                 The assignment to create this web page was given in the first week of our course. The project introduced us to the concept of making responsive web pages that could accomodate multiple devices.
@@ -72,6 +86,10 @@
               <h4>Technologies:</h4>
               <p>
                 SASS, CSS, HTML, Font-Awesome
+              </p>
+              <h4>Find on Github:</h4>
+              <p>
+                <a href="https://github.com/tiffanyRossyRobinson/DayFourResponsive">Powell Peralta</a>
               </p>
             </div>
         </accordion-group>

@@ -1,17 +1,21 @@
+/* $darkColor : #2B2726; */
+/* $blueColor : #0A516D; */
+/* $tealColor : #018790;
+$greenColor: #7DAD93; */
 * {
-  font-family: 'Francois One', sans-serif;
+  font-family: 'Nunito', sans-serif;
   margin: 0px; }
 
 header {
-  background-color: #0A516D;
-  color: #00A8C6;
+  background-color: #00A8C6;
+  color: #A3D95B;
   width: 100vw; }
   header a {
-    color: #00A8C6; }
+    color: #A3D95B; }
   header a:hover {
-    color: #7DAD93; }
+    color: white; }
   header a:visited {
-    color: #018790; }
+    color: #A3D95B; }
   header ul {
     list-style: none; }
   header .row {
@@ -31,9 +35,9 @@ header {
     header .contact a {
       /*   border: 1px solid $darkColor; */
       margin-right: 3%;
-      color: white; }
+      color: #A3D95B; }
     header .contact a:hover {
-      color: #7DAD93; }
+      color: white; }
   header .name {
     text-align: left;
     padding-left: 3%; }
@@ -55,7 +59,8 @@ header {
     margin-left: 30%;
     padding-top: 2%;
     font-weight: 900;
-    color: #2B2726;
+    color: #A3D95B;
+    text-shadow: 2px 2px #000;
     white-space: nowrap;
     overflow: hidden;
     width: 30em;
@@ -97,13 +102,13 @@ header {
   margin-left: auto;
   margin-right: auto;
   background-color: #00A8C6;
-  text-color: #0A516D;
+  text-color: #A3D95B;
   border-radius: 8%; }
   .Reviews h3 {
     margin-top: 0;
     padding-top: 3%;
     text-align: center;
-    color: #1D2E4C;
+    color: #A3D95B;
     font-weight: 500; }
   .Reviews .oneReview {
     width: 80%;
@@ -111,10 +116,12 @@ header {
     margin-left: auto;
     margin-right: auto; }
     .Reviews .oneReview p {
-      text-align: justify; }
+      text-align: justify;
+      font-weight: lighter;
+      color: white; }
     .Reviews .oneReview h4 {
       text-align: right;
-      color: #1D2E4C;
+      color: #A3D95B;
       font-weight: 300; }
 
 .aboutMe {
@@ -123,13 +130,13 @@ header {
   margin-right: auto;
   background-color: #00A8C6;
   background-size: cover;
-  text-color: #0A516D;
+  text-color: #A3D95B;
   border-radius: 8%; }
   .aboutMe h4, .aboutMe h5 {
     margin-top: 0;
     padding-top: 3%;
     text-align: center;
-    color: #1D2E4C;
+    color: #A3D95B;
     font-weight: 500; }
   .aboutMe .section {
     width: 80%;
@@ -146,7 +153,10 @@ header {
       padding-left: 3%;
       padding-right: 3%;
       display: inline-block;
-      vertical-align: middle; }
+      vertical-align: middle;
+      text-align: justify;
+      font-weight: lighter;
+      color: white; }
 
 .workPage {
   width: 80%;
@@ -155,7 +165,7 @@ header {
   padding-bottom: 5%;
   border-radius: 8%;
   margin-top: 0;
-  text-color: #0A516D;
+  text-color: #A3D95B;
   background-color: #00A8C6;
   background-size: cover; }
   .workPage .accordionDiv {
@@ -164,6 +174,7 @@ header {
     margin-right: auto; }
   .workPage h3 {
     text-align: center;
+    text-color: #A3D95B;
     padding-top: 3%;
     margin-bottom: 5%; }
   .workPage img {
@@ -175,6 +186,10 @@ header {
     width: 80%;
     margin-left: auto;
     margin-right: auto; }
+  .workPage h4 {
+    text-color: #A3D95B; }
+  .workPage p {
+    text-color: white; }
 
 .resumeViewer {
   width: 80%;
@@ -183,33 +198,65 @@ header {
   padding-bottom: 5%;
   border-radius: 8%;
   margin-top: 0;
-  text-color: #0A516D;
   background-color: #00A8C6;
-  background-size: cover;
-  text-align: center; }
-  .resumeViewer a {
-    color: #2B2726;
-    margin-right: 5%; }
-  .resumeViewer a:hover {
-    color: #018790; }
-  .resumeViewer a:visited {
-    color: #0A516D; }
-  .resumeViewer canvas {
-    width: 90%;
-    margin-top: 4%;
-    border-radius: 8%; }
+  background-size: cover; }
   .resumeViewer .linkToResume {
     text-align: right;
+    width: 60%;
     padding-top: 5%;
     padding-bottom: 5%;
+    margin-right: auto;
+    margin-left: auto;
     font-weight: 300; }
+  .resumeViewer h4 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #A3D95B; }
+  .resumeViewer p {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-align: justify; }
+  .resumeViewer h5 {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bolder;
+    color: white; }
+  .resumeViewer ul {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white; }
+  .resumeViewer a {
+    text-decoration: none;
+    color: #A3D95B; }
+  .resumeViewer a:hover {
+    color: white; }
+  .resumeViewer a:visited {
+    color: #A3D95B; }
+  .resumeViewer .accord {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-color: #000; }
+    .resumeViewer .accord h5, .resumeViewer .accord h6 {
+      color: black; }
+    .resumeViewer .accord h6 {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto; }
+    .resumeViewer .accord p {
+      color: black; }
 
 .hireMe {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
-  text-color: #0A516D;
+  text-color: #A3D95B;
   background-color: #00A8C6;
   background-size: cover;
   border-radius: 8%;
@@ -234,8 +281,8 @@ header {
         display: block; }
       .hireMe .hireContact li a {
         text-decoration: none;
-        color: #2B2726; }
+        color: #A3D95B; }
       .hireMe .hireContact li a:hover {
-        color: #018790; }
+        color: white; }
       .hireMe .hireContact li a:visited {
-        color: #0A516D; }
+        color: #A3D95B; }

@@ -8,7 +8,7 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
     <link href='css/animate.css' rel='stylesheet' type='text/css'>
   </head>
   <body ng-app="tiffany">
@@ -23,14 +23,15 @@
       <div class="row">
           <div class="col-md-3">
             <div class="name">
-              <h3 class="myName"> <a href="#/">Tiffany Rossy Robinson</a>
+              <h3 class="myName"> <a href="#/">Tiffany R Robinson</a>
             </div>
           </div>
           <div class="col-md-6">
             <div class= "navigation">
               <ul class="navLinks">
+                <li><a href="#/">Home</a></li>
                 <li><a  href="#/about">About</a></li>
-                <li><a  href="#/Work">Work Samples</a></li>
+                <li><a  href="#/Reviews">Reviews</a></li>
                 <li><a href="#/Resume">Resume</a></li>
                 <li><a href="#/HireMe">Hire Me!</a></li>
               </ul>
@@ -39,7 +40,7 @@
           <div class="col-md-3">
             <ul class="contact">
               <li><a href="tel:915-342-3291">Phone: 915-342-3291</a></li>
-              <li><a href="mailto:trossys@gmail.com?Subject=We%20want%20to%20hire%20you!">Email: trossys@gmail.com</a></li>
+              <li><a href="mailto:trossys@gmail.com?Subject=Let's%20discuss%20possible%20job%20opportunities!">Email: trossys@gmail.com</a></li>
               <li><a class="icon-linkedin" href="https://www.linkedin.com/pub/tiffany-robinson/102/774/787"></a> <a class="icon-github-sign" href="https://github.com/tiffanyRossyRobinson"></a></li>
             </ul>
           </div>
@@ -58,19 +59,11 @@
 <script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
 <script src="bower_components/pdfjs-dist/build/pdf.js"></script>
 <script src="bower_components/angular/angular.js"></script>
-<script src="bower_components/angular-pdf-viewer/dist/angular-pdf-viewer.min.js"></script>
+<!-- <script src="bower_components/angular-pdf-viewer/dist/angular-pdf-viewer.min.js"></script> -->
 
 <script type="text/javascript" src="bower_components/wow/dist/wow.js"></script>
 <script>
-wow = new WOW(
-  //  {
-  //    boxClass:     'wow',      // default
-  //    animateClass: 'animated', // default
-  //    offset:       0,          // default
-  //    mobile:       true,       // default
-  //    live:         true        // default
-  //  }
- )
+wow = new WOW();
 
 console.log(wow);
  wow.init();

@@ -5,21 +5,20 @@
     .module('tiffany', [
       'ngRoute',
       'underscore',
-      'ui.bootstrap',
-      'pdf'
+      'ui.bootstrap'
     ])
     .config(function ($routeProvider) {
       $routeProvider
         .when('/', {
-          templateUrl: 'views/main.html',
+          templateUrl: 'views/work.html',
           controller: 'MainController'
         })
         .when('/about', {
           templateUrl: 'views/about.html',
           controller: 'MainController'
         })
-        .when('/Work', {
-          templateUrl: 'views/work.html',
+        .when('/Reviews', {
+          templateUrl: 'views/main.html',
           controller: 'MainController'
         })
         .when('/Resume', {
