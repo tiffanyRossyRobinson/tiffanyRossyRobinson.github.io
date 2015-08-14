@@ -1,0 +1,241 @@
+* {
+  font-family: 'Francois One', sans-serif;
+  margin: 0px; }
+
+header {
+  background-color: #0A516D;
+  color: #00A8C6;
+  width: 100vw; }
+  header a {
+    color: #00A8C6; }
+  header a:hover {
+    color: #7DAD93; }
+  header a:visited {
+    color: #018790; }
+  header ul {
+    list-style: none; }
+  header .row {
+    border: 5px solid black;
+    border-radius: 5%; }
+  header .navLinks {
+    padding-top: 4%;
+    text-align: center; }
+    header .navLinks li {
+      display: inline-block;
+      font-size: 20px;
+      padding-right: 5%; }
+  header .contact {
+    text-align: right;
+    padding-right: 3%;
+    font-size: 15px; }
+    header .contact a {
+      /*   border: 1px solid $darkColor; */
+      margin-right: 3%;
+      color: white; }
+    header .contact a:hover {
+      color: #7DAD93; }
+  header .name {
+    text-align: left;
+    padding-left: 3%; }
+    header .name a {
+      text-decoration: none; }
+
+.topImage {
+  width: 100vw;
+  height: 80%;
+  position: relative;
+  background: url("http://www.hdwallpapers.in/walls/matrix_binary-wide.jpg") center center no-repeat fixed;
+  background-size: cover; }
+  .topImage .des {
+    margin-left: 35%;
+    padding-top: 0; }
+  .topImage h2 {
+    /*       font-size: 20px; */
+    position: relative;
+    margin-left: 30%;
+    padding-top: 2%;
+    font-weight: 900;
+    color: #2B2726;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+    animation: type 4s steps(60, end); }
+  .topImage h2:nth-child(2) {
+    animation: type2 3s steps(60, end); }
+  .topImage h2:nth-child(3) {
+    animation: type2 6s steps(60, end); }
+  .topImage h2:nth-child(4) {
+    animation: type2 8s steps(60, end); }
+  .topImage h2:nth-child(5) {
+    animation: type2 11s steps(60, end); }
+  .topImage span {
+    animation: blink 1s infinite; }
+
+@keyframes type {
+  from {
+    width: 0; } }
+
+@keyframes type2 {
+  0% {
+    width: 0; }
+  50% {
+    width: 0; }
+  100% {
+    width: 100; } }
+
+@keyframes blink {
+  to {
+    opacity: .0; } }
+
+/*
+.ng-scope{
+  background-color: white;
+} */
+.Reviews {
+  width: 80%;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #00A8C6;
+  text-color: #0A516D;
+  border-radius: 8%; }
+  .Reviews h3 {
+    margin-top: 0;
+    padding-top: 3%;
+    text-align: center;
+    color: #1D2E4C;
+    font-weight: 500; }
+  .Reviews .oneReview {
+    width: 80%;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto; }
+    .Reviews .oneReview p {
+      text-align: justify; }
+    .Reviews .oneReview h4 {
+      text-align: right;
+      color: #1D2E4C;
+      font-weight: 300; }
+
+.aboutMe {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #00A8C6;
+  background-size: cover;
+  text-color: #0A516D;
+  border-radius: 8%; }
+  .aboutMe h4, .aboutMe h5 {
+    margin-top: 0;
+    padding-top: 3%;
+    text-align: center;
+    color: #1D2E4C;
+    font-weight: 500; }
+  .aboutMe .section {
+    width: 80%;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto; }
+    .aboutMe .section img {
+      width: 30%;
+      display: inline-block;
+      margin-bottom: 3%;
+      border-radius: 30%; }
+    .aboutMe .section p {
+      width: 69%;
+      padding-left: 3%;
+      padding-right: 3%;
+      display: inline-block;
+      vertical-align: middle; }
+
+.workPage {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5%;
+  border-radius: 8%;
+  margin-top: 0;
+  text-color: #0A516D;
+  background-color: #00A8C6;
+  background-size: cover; }
+  .workPage .accordionDiv {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; }
+  .workPage h3 {
+    text-align: center;
+    padding-top: 3%;
+    margin-bottom: 5%; }
+  .workPage img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%; }
+  .workPage h4, .workPage p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; }
+
+.resumeViewer {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5%;
+  border-radius: 8%;
+  margin-top: 0;
+  text-color: #0A516D;
+  background-color: #00A8C6;
+  background-size: cover;
+  text-align: center; }
+  .resumeViewer a {
+    color: #2B2726;
+    margin-right: 5%; }
+  .resumeViewer a:hover {
+    color: #018790; }
+  .resumeViewer a:visited {
+    color: #0A516D; }
+  .resumeViewer canvas {
+    width: 90%;
+    margin-top: 4%;
+    border-radius: 8%; }
+  .resumeViewer .linkToResume {
+    text-align: right;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-weight: 300; }
+
+.hireMe {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  text-color: #0A516D;
+  background-color: #00A8C6;
+  background-size: cover;
+  border-radius: 8%;
+  text-align: center; }
+  .hireMe h3 {
+    padding-top: 3%; }
+  .hireMe h4 {
+    margin-top: 3%; }
+  .hireMe ul {
+    list-style: none; }
+  .hireMe .hireContact {
+    padding-top: 4%;
+    padding-left: 5%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; }
+    .hireMe .hireContact li {
+      display: inline-block;
+      font-size: 20px;
+      padding: 5% 5% 5% 5%; }
+      .hireMe .hireContact li i {
+        display: block; }
+      .hireMe .hireContact li a {
+        text-decoration: none;
+        color: #2B2726; }
+      .hireMe .hireContact li a:hover {
+        color: #018790; }
+      .hireMe .hireContact li a:visited {
+        color: #0A516D; }
