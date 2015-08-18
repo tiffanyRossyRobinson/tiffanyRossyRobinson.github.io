@@ -1,31 +1,26 @@
-/* $darkColor : #2B2726; */
-/* $blueColor : #0A516D; */
-/* $tealColor : #018790;
-$greenColor: #7DAD93; */
-$bBlueColor: #00A8C6;
-$darkBlue: #A3D95B;
+$teal: #2FB8AC;
+$brown: #332C26;
 
-* {
-  font-family: 'Nunito', sans-serif;
-  margin: 0px;
-}
 
-//------------------Styling Header Section -----------------------------------//
-header{
-  background-color: $bBlueColor;
-  color: $darkBlue;
-  width: 100vw;
-  a {
-    color: $darkBlue;
-  }
-  a:hover{
-    color: white;
-  }
-  a:visited{
-    color: $darkBlue;
-  }
+.header{
+  background-color: #332C26;
+  width: 100%;
+  position: fixed;
+  display: block;
+  z-index: 3;
+  top:0;
   ul{
     list-style: none;
+  }
+  h6{
+    text-decoration: none;
+    font-size: 20px;
+    color: $teal;
+    font-family: 'Nova Oval', cursive;
+  }
+  h6:hover{
+    text-decoration:none;
+    color:white;
   }
   .row{
     border: 5px solid black;
@@ -44,326 +39,242 @@ header{
   .contact{
     text-align: right;
     padding-right: 3%;
-    font-size: 15px;
     a{
-    /*   border: 1px solid $darkColor; */
-      margin-right: 3%;
-      color: $darkBlue;
+      color: $teal;
     }
     a:hover{
-      color: white;
+      color:white;
+      text-decoration:none;
+    }
+
+    p{
+      font-family: 'Nova Oval', cursive;
+      font-size: 15px;
+      text-decoration: none;
     }
   }
   .name{
     text-align: left;
     padding-left: 3%;
     a{
-      text-decoration: none;
+      font-size: 30px;
+      font-family: 'Swanky and Moo Moo', cursive;
     }
   }
 }
 
-.topImage{
-    width: 100vw;
-    height: 80%;
-    position:relative;
-    background: url('http://www.hdwallpapers.in/walls/matrix_binary-wide.jpg') center center no-repeat fixed;
-    background-size: cover;
-    .des{
-      margin-left: 35%;
-      padding-top: 0;
-    }
-    h2{
-/*       font-size: 20px; */
-      position:relative;
-      margin-left: 30%;
-      padding-top: 2%;
-      font-weight: 900;
-      color: $darkBlue;
-      text-shadow: 2px 2px #000;
-      white-space: nowrap;
-      overflow: hidden;
-      width: 30em;
-      animation: type 4s steps(60, end);
-    }
 
-    h2:nth-child(2){
-      animation: type2 3s steps(60, end);
-    }
-    h2:nth-child(3){
-      animation: type2 6s steps(60, end);
-    }
-    h2:nth-child(4){
-      animation: type2 8s steps(60, end);
-    }
-    h2:nth-child(5){
-      animation: type2 11s steps(60, end);
-    }
-
-    span{
-      animation: blink 1s infinite;
-    }
-
-    @keyframes type{
-      from { width: 0; }
-    }
-
-    @keyframes type2{
-      0%{width: 0;}
-      50%{width: 0;}
-      100%{ width: 100; }
-    }
-
-    @keyframes blink{
-      to{opacity: .0;}
-    }
-}
-
-
-//------------------------ Styling Main View ---------------------------------//
-/*
-.ng-scope{
-  background-color: white;
-} */
-.Reviews{
-  width: 80%;
+//------------------------main section styling -------------------------------//
+.mainSection{
   height: 100vh;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: $bBlueColor;
-  text-color: $darkBlue;
-  border-radius: 8%;
-
-  h3{
-    margin-top: 0;
-    padding-top: 3%;
-    text-align: center;
-    color: $darkBlue;
-    font-weight: 500;
-  }
-  .oneReview{
-    width: 80%;
-    margin-top: 3%;
-    margin-left: auto;
-    margin-right: auto;
-    p{
-      text-align: justify;
-      font-weight:lighter;
-      color: white;
-    }
-
-    h4{
-      text-align: right;
-      color: $darkBlue;
-      font-weight: 300;
-    }
-  }
-}
-
-//------------------------ Styling About View --------------------------------//
-
-.aboutMe{
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: $bBlueColor;
+  padding-top: 10%;
+  background-image: url('http://images.nationalgeographic.com/wpf/media-live/photos/000/235/cache/free-cities-charleston_23573_600x450.jpg');
+  background-repeat: no-repeat;
   background-size: cover;
-  text-color: $darkBlue;
-  border-radius: 8%;
-  h4, h5{
-    margin-top: 0;
-    padding-top: 3%;
-    text-align: center;
-    color: $darkBlue;
-    font-weight: 500;
-  }
-  .section{
-    width: 80%;
-    text-align: justify;
-    margin-left: auto;
-    margin-right: auto;
-    img{
-      width: 30%;
-      display: inline-block;
-      margin-bottom: 3%;
-      border-radius: 30%;
-    }
-    p{
-      width: 69%;
-      padding-left: 3%;
-      padding-right: 3%;
-      display: inline-block;
-      vertical-align: middle;
-      text-align: justify;
-      font-weight:lighter;
-      color: white;
-    }
-  }
-}
+  background-attachment: relative;
+  background-position: center;
+  font-family: 'Swanky and Moo Moo', cursive;
 
-//------------------------ Styling Works View --------------------------------//
-.workPage{
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 5%;
-  border-radius: 8%;
-  margin-top: 0;
-  text-color: $darkBlue;
-  background-color: $bBlueColor;
-  background-size: cover;
-  .accordionDiv{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  h3{
-    text-align: center;
-    text-color: $darkBlue;
-    padding-top: 3%;
-    margin-bottom: 5%;
-  }
-  img{
-    display: block;
+  .learnMore{
+    margin-top: 8%;
+    width: 40%;
+    text-align:center;
     margin-left:auto;
-    margin-right: auto;
-    width: 30%;
-  }
-  h4, p{
-    width: 80%;
-    margin-left:auto;
-    margin-right: auto;
-  }
-  h4{
-    text-color: $darkBlue;
-  }
-  p{
-    text-color: white;
-  }
-
-}
-
-//-----------------------Resume Page Styling ---------------------------------//
-.resumeViewer{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 5%;
-    border-radius: 8%;
-    margin-top: 0;
-    background-color: $bBlueColor;
-    background-size: cover;
-    .linkToResume{
-      text-align: right;
-      width: 60%;
-      padding-top: 5%;
-      padding-bottom: 5%;
-      margin-right: auto;
-      margin-left: auto;
-      font-weight: 300;
-    }
-    h4{
-      width: 80%;
-      margin-left:auto;
-      margin-right: auto;
-      color: $darkBlue;
-    }
-    p{
-      width: 60%;
-      margin-left:auto;
-      margin-right: auto;
-      color: white;
-      text-align: justify;
-    }
-    h5{
-      width: 65%;
-      margin-left: auto;
-      margin-right:auto;
-      font-weight: bolder;
-      color:white;
-    }
-    ul{
-      width: 50%;
-      margin-left:auto;
-      margin-right:auto;
-      color:white;
-    }
+    margin-right:auto;
     a{
-      text-decoration: none;
-      color: $darkBlue;
+      color: $teal;
+      width:100%;
+      font-size: 40px;
+      background-color: #332C26;
+      padding: 4px;
+      text-align: center;
     }
     a:hover{
-      color:white;
+      color: white;
+      text-decoration: none;
     }
-    a:visited{
-      color: $darkBlue;
-    }
-    .accord{
-      width: 60%;
-      margin-left:auto;
-      margin-right:auto;
-      text-color: #000;
-      h5, h6{
-        color: black;
-      }
-      h6{
-        width: 80%;
-        margin-left:auto;
-        margin-right:auto;
-      }
-      p{
-        color: black;
-      }
-    }
+  }
+  h1{
+    font-size: 80px;
+    text-align:center;
+
+  }
+  h4{
+    font-size: 60px;
+    text-align:center;
+  }
+
 }
 
-//-----------------------Hire Me Page Styling --------------------------------//
-
-.hireMe{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    text-color: $darkBlue;
-    background-color: $bBlueColor;
-    background-size: cover;
-    border-radius: 8%;
-    text-align: center;
-    h3{
-      padding-top: 3%;
-    }
-    h4{
-      margin-top: 3%;
-    }
-    ul{
-      list-style: none;
-    }
-    .hireContact{
-      padding-top: 4%;
-      padding-left: 5%;
-      text-align: center;
+//-----------------about section styling -------------------------------------//
+.meSection{
+  padding-top: 10%;
+  background-color: #FFB884;
+  height: 100vh;
+  ul{
+    font-family: 'Swanky and Moo Moo', cursive;
+    text-align:center;
+    margin-top:5%;
+    li{
+      display: inline-block;
+      vertical-align:middle;
+      width: 40%;
+      text-align:center;
       margin-left:auto;
-      margin-right: auto;
-      li{
-        display: inline-block;
-        font-size: 20px;
-        padding: 5% 5% 5% 5%;
-        i{
-          display: block;
-        }
-        a{
-          text-decoration: none;
-          color: $darkBlue;
-        }
-        a:hover{
-          color:white;
-        }
-        a:visited{
-          color: $darkBlue;
-        }
+      margin-right:auto;
+      img{
+        border-radius: 50%;
+        vertical-align:middle;
+        border: 2px solid $teal;
 
       }
-
+      h4{
+        font-size: 50px;
+        text-shadow: $teal 0px 0px 1px;
+        font-weight:bolder;
+      }
+      p{
+        font-size:25px;
+        line-height:120%;
+        font-family: 'Nova Oval', cursive;
+      }
     }
+  }
+}
+
+//-----------------resume section styling ------------------------------------//
+
+.resumeSection{
+  padding-top: 10%;
+  background-color: #E8D3A9;
+  height: 100vh;
+  border:1px solid black;
+  font-family: 'Swanky and Moo Moo', cursive;
+  .sideResume{
+    width:28%;
+    display:inline-block;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-right: 1px dashed #332C26;
+    p{
+      font-family: 'Nova Oval', cursive;
+      text-align:center;
+    }
+  }
+  .linkToResume{
+    padding-right:3%;
+    text-align:right;
+    a{
+      color:$brown;
+    }
+    a:hover{
+      text-decoration:none;
+      color:$teal;
+    }
+  }
+  .resumeWork{
+    width:68%;
+    display:inline-block;
+    vertical-align: top;
+  }
+  h3{
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:15%;
+    text-align:center;
+    font-size: 50px;
+    text-shadow: $teal 0px 0px 1px;
+    font-weight:bolder;
+  }
+  ul{
+    text-decoration:none;
+    width:100%;
+    margin-top:4%;
+    padding-left:20%;
+    margin-left:auto;
+    margin-right:auto;
+
+    li{
+      display:inline-block;
+      width:10em;
+      height:10em;
+      padding-top:3em;
+      text-align:center;
+      vertical-align:bottom;
+      border-radius:100%;
+      border: 4px solid #332C26;
+      margin-right:5%;
+      h4{
+          padding:4%;
+          font-weight:bolder;
+          font-size: 22px;
+          color: $teal;
+          background-color:#332C26;
+          border-radius:40%;
+      }
+    }
+  }
+  .placeMe{
+    background-image: url('placeme.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: relative;
+    background-position: center;
+  }
+  .halibut{
+    background-image: url('halibut.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: relative;
+    background-position: center;
+  }
+  .peralta{
+    background-image: url('peralta.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: relative;
+    background-position: center;
+  }
+}
+
+//-----------------contact section styling -----------------------------------//
+.contactSection{
+  padding-top: 10%;
+  background-color: #FFB884;
+  height: 100vh;
+  border:1px solid black;
+  font-family: 'Nova Oval', cursive;
+  .carousel{
+    h4{
+      color:$teal;
+      font-weight:bold;
+    }
+    p{
+      font-size:20px;
+    /*   text-shadow: $brown 0px 0px 1px; */
+    }
+  }
+  ul{
+    text-decoration:none;
+    width: 80%;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:2%;
+    li{
+      display:inline-block;
+      margin-right:3%;
+      a{
+        color:$brown;
+      }
+      a:hover{
+        color:$teal;
+        text-decoration:none;
+      }
+      i{
+        display:block;
+      }
+    }
+  }
 }

@@ -1,288 +1,214 @@
-/* $darkColor : #2B2726; */
-/* $blueColor : #0A516D; */
-/* $tealColor : #018790;
-$greenColor: #7DAD93; */
-* {
-  font-family: 'Nunito', sans-serif;
-  margin: 0px; }
-
-header {
-  background-color: #00A8C6;
-  color: #A3D95B;
-  width: 100vw; }
-  header a {
-    color: #A3D95B; }
-  header a:hover {
-    color: white; }
-  header a:visited {
-    color: #A3D95B; }
-  header ul {
+.header {
+  background-color: #332C26;
+  width: 100%;
+  position: fixed;
+  display: block;
+  z-index: 3;
+  top: 0; }
+  .header ul {
     list-style: none; }
-  header .row {
+  .header h6 {
+    text-decoration: none;
+    font-size: 20px;
+    color: #2FB8AC;
+    font-family: 'Nova Oval', cursive; }
+  .header h6:hover {
+    text-decoration: none;
+    color: white; }
+  .header .row {
     border: 5px solid black;
     border-radius: 5%; }
-  header .navLinks {
+  .header .navLinks {
     padding-top: 4%;
     text-align: center; }
-    header .navLinks li {
+    .header .navLinks li {
       display: inline-block;
       font-size: 20px;
       padding-right: 5%; }
-  header .contact {
+  .header .contact {
     text-align: right;
-    padding-right: 3%;
-    font-size: 15px; }
-    header .contact a {
-      /*   border: 1px solid $darkColor; */
-      margin-right: 3%;
-      color: #A3D95B; }
-    header .contact a:hover {
-      color: white; }
-  header .name {
+    padding-right: 3%; }
+    .header .contact a {
+      color: #2FB8AC; }
+    .header .contact a:hover {
+      color: white;
+      text-decoration: none; }
+    .header .contact p {
+      font-family: 'Nova Oval', cursive;
+      font-size: 15px;
+      text-decoration: none; }
+  .header .name {
     text-align: left;
     padding-left: 3%; }
-    header .name a {
-      text-decoration: none; }
+    .header .name a {
+      font-size: 30px;
+      font-family: 'Swanky and Moo Moo', cursive; }
 
-.topImage {
-  width: 100vw;
-  height: 80%;
-  position: relative;
-  background: url("http://www.hdwallpapers.in/walls/matrix_binary-wide.jpg") center center no-repeat fixed;
-  background-size: cover; }
-  .topImage .des {
-    margin-left: 35%;
-    padding-top: 0; }
-  .topImage h2 {
-    /*       font-size: 20px; */
-    position: relative;
-    margin-left: 30%;
-    padding-top: 2%;
-    font-weight: 900;
-    color: #A3D95B;
-    text-shadow: 2px 2px #000;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 30em;
-    animation: type 4s steps(60, end); }
-  .topImage h2:nth-child(2) {
-    animation: type2 3s steps(60, end); }
-  .topImage h2:nth-child(3) {
-    animation: type2 6s steps(60, end); }
-  .topImage h2:nth-child(4) {
-    animation: type2 8s steps(60, end); }
-  .topImage h2:nth-child(5) {
-    animation: type2 11s steps(60, end); }
-  .topImage span {
-    animation: blink 1s infinite; }
-
-@keyframes type {
-  from {
-    width: 0; } }
-
-@keyframes type2 {
-  0% {
-    width: 0; }
-  50% {
-    width: 0; }
-  100% {
-    width: 100; } }
-
-@keyframes blink {
-  to {
-    opacity: .0; } }
-
-/*
-.ng-scope{
-  background-color: white;
-} */
-.Reviews {
-  width: 80%;
+.mainSection {
   height: 100vh;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #00A8C6;
-  text-color: #A3D95B;
-  border-radius: 8%; }
-  .Reviews h3 {
-    margin-top: 0;
-    padding-top: 3%;
-    text-align: center;
-    color: #A3D95B;
-    font-weight: 500; }
-  .Reviews .oneReview {
-    width: 80%;
-    margin-top: 3%;
-    margin-left: auto;
-    margin-right: auto; }
-    .Reviews .oneReview p {
-      text-align: justify;
-      font-weight: lighter;
-      color: white; }
-    .Reviews .oneReview h4 {
-      text-align: right;
-      color: #A3D95B;
-      font-weight: 300; }
-
-.aboutMe {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #00A8C6;
+  padding-top: 10%;
+  background-image: url("http://images.nationalgeographic.com/wpf/media-live/photos/000/235/cache/free-cities-charleston_23573_600x450.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
-  text-color: #A3D95B;
-  border-radius: 8%; }
-  .aboutMe h4, .aboutMe h5 {
-    margin-top: 0;
-    padding-top: 3%;
+  background-attachment: relative;
+  background-position: center;
+  font-family: 'Swanky and Moo Moo', cursive; }
+  .mainSection .learnMore {
+    margin-top: 8%;
+    width: 40%;
     text-align: center;
-    color: #A3D95B;
-    font-weight: 500; }
-  .aboutMe .section {
-    width: 80%;
-    text-align: justify;
     margin-left: auto;
     margin-right: auto; }
-    .aboutMe .section img {
-      width: 30%;
-      display: inline-block;
-      margin-bottom: 3%;
-      border-radius: 30%; }
-    .aboutMe .section p {
-      width: 69%;
-      padding-left: 3%;
-      padding-right: 3%;
+    .mainSection .learnMore a {
+      color: #2FB8AC;
+      width: 100%;
+      font-size: 40px;
+      background-color: #332C26;
+      padding: 4px;
+      text-align: center; }
+    .mainSection .learnMore a:hover {
+      color: white;
+      text-decoration: none; }
+  .mainSection h1 {
+    font-size: 80px;
+    text-align: center; }
+  .mainSection h4 {
+    font-size: 60px;
+    text-align: center; }
+
+.meSection {
+  padding-top: 10%;
+  background-color: #FFB884;
+  height: 100vh; }
+  .meSection ul {
+    font-family: 'Swanky and Moo Moo', cursive;
+    text-align: center;
+    margin-top: 5%; }
+    .meSection ul li {
       display: inline-block;
       vertical-align: middle;
-      text-align: justify;
-      font-weight: lighter;
-      color: white; }
-
-.workPage {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 5%;
-  border-radius: 8%;
-  margin-top: 0;
-  text-color: #A3D95B;
-  background-color: #00A8C6;
-  background-size: cover; }
-  .workPage .accordionDiv {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto; }
-  .workPage h3 {
-    text-align: center;
-    text-color: #A3D95B;
-    padding-top: 3%;
-    margin-bottom: 5%; }
-  .workPage img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%; }
-  .workPage h4, .workPage p {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto; }
-  .workPage h4 {
-    text-color: #A3D95B; }
-  .workPage p {
-    text-color: white; }
-
-.resumeViewer {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 5%;
-  border-radius: 8%;
-  margin-top: 0;
-  background-color: #00A8C6;
-  background-size: cover; }
-  .resumeViewer .linkToResume {
-    text-align: right;
-    width: 60%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    margin-right: auto;
-    margin-left: auto;
-    font-weight: 300; }
-  .resumeViewer h4 {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    color: #A3D95B; }
-  .resumeViewer p {
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
-    text-align: justify; }
-  .resumeViewer h5 {
-    width: 65%;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: bolder;
-    color: white; }
-  .resumeViewer ul {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    color: white; }
-  .resumeViewer a {
-    text-decoration: none;
-    color: #A3D95B; }
-  .resumeViewer a:hover {
-    color: white; }
-  .resumeViewer a:visited {
-    color: #A3D95B; }
-  .resumeViewer .accord {
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    text-color: #000; }
-    .resumeViewer .accord h5, .resumeViewer .accord h6 {
-      color: black; }
-    .resumeViewer .accord h6 {
-      width: 80%;
+      width: 40%;
+      text-align: center;
       margin-left: auto;
       margin-right: auto; }
-    .resumeViewer .accord p {
-      color: black; }
+      .meSection ul li img {
+        border-radius: 50%;
+        vertical-align: middle;
+        border: 2px solid #2FB8AC; }
+      .meSection ul li h4 {
+        font-size: 50px;
+        text-shadow: #2FB8AC 0px 0px 1px;
+        font-weight: bolder; }
+      .meSection ul li p {
+        font-size: 25px;
+        line-height: 120%;
+        font-family: 'Nova Oval', cursive; }
 
-.hireMe {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  text-color: #A3D95B;
-  background-color: #00A8C6;
-  background-size: cover;
-  border-radius: 8%;
-  text-align: center; }
-  .hireMe h3 {
-    padding-top: 3%; }
-  .hireMe h4 {
-    margin-top: 3%; }
-  .hireMe ul {
-    list-style: none; }
-  .hireMe .hireContact {
-    padding-top: 4%;
-    padding-left: 5%;
+.resumeSection {
+  padding-top: 10%;
+  background-color: #E8D3A9;
+  height: 100vh;
+  border: 1px solid black;
+  font-family: 'Swanky and Moo Moo', cursive; }
+  .resumeSection .sideResume {
+    width: 28%;
+    display: inline-block;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-right: 1px dashed #332C26; }
+    .resumeSection .sideResume p {
+      font-family: 'Nova Oval', cursive;
+      text-align: center; }
+  .resumeSection .linkToResume {
+    padding-right: 3%;
+    text-align: right; }
+    .resumeSection .linkToResume a {
+      color: #332C26; }
+    .resumeSection .linkToResume a:hover {
+      text-decoration: none;
+      color: #2FB8AC; }
+  .resumeSection .resumeWork {
+    width: 68%;
+    display: inline-block;
+    vertical-align: top; }
+  .resumeSection h3 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
     text-align: center;
+    font-size: 50px;
+    text-shadow: #2FB8AC 0px 0px 1px;
+    font-weight: bolder; }
+  .resumeSection ul {
+    text-decoration: none;
+    width: 100%;
+    margin-top: 4%;
+    padding-left: 20%;
     margin-left: auto;
     margin-right: auto; }
-    .hireMe .hireContact li {
+    .resumeSection ul li {
       display: inline-block;
-      font-size: 20px;
-      padding: 5% 5% 5% 5%; }
-      .hireMe .hireContact li i {
+      width: 10em;
+      height: 10em;
+      padding-top: 3em;
+      text-align: center;
+      vertical-align: bottom;
+      border-radius: 100%;
+      border: 4px solid #332C26;
+      margin-right: 5%; }
+      .resumeSection ul li h4 {
+        padding: 4%;
+        font-weight: bolder;
+        font-size: 22px;
+        color: #2FB8AC;
+        background-color: #332C26;
+        border-radius: 40%; }
+  .resumeSection .placeMe {
+    background-image: url("placeme.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: relative;
+    background-position: center; }
+  .resumeSection .halibut {
+    background-image: url("halibut.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: relative;
+    background-position: center; }
+  .resumeSection .peralta {
+    background-image: url("peralta.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: relative;
+    background-position: center; }
+
+.contactSection {
+  padding-top: 10%;
+  background-color: #FFB884;
+  height: 100vh;
+  border: 1px solid black;
+  font-family: 'Nova Oval', cursive; }
+  .contactSection .carousel h4 {
+    color: #2FB8AC;
+    font-weight: bold; }
+  .contactSection .carousel p {
+    font-size: 20px;
+    /*   text-shadow: $brown 0px 0px 1px; */ }
+  .contactSection ul {
+    text-decoration: none;
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%; }
+    .contactSection ul li {
+      display: inline-block;
+      margin-right: 3%; }
+      .contactSection ul li a {
+        color: #332C26; }
+      .contactSection ul li a:hover {
+        color: #2FB8AC;
+        text-decoration: none; }
+      .contactSection ul li i {
         display: block; }
-      .hireMe .hireContact li a {
-        text-decoration: none;
-        color: #A3D95B; }
-      .hireMe .hireContact li a:hover {
-        color: white; }
-      .hireMe .hireContact li a:visited {
-        color: #A3D95B; }
