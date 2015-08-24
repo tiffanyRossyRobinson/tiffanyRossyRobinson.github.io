@@ -1,44 +1,27 @@
-<div class="header">
-  <div class="row">
-      <div class="col-md-3">
-        <div class="name">
-          <h3 class="myName"> <a href="#/"><h6>Tiffany R Robinson</h6></a>
-        </div>
+<header>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Tiffany R Robinson</a></a>
       </div>
-      <div class="col-md-5">
-        <div class= "navigation">
-          <ul class="navLinks">
-            <li><a class="mainSec" href="#mainSection"><h6>Home</h6></a></li>
-            <li><a  class="aboutMe" href="#meSection"><h6>About</h6></a></li>
-            <li><a class="resumeSec" href="#resumeSection"><h6>Resume</h6></a></li>
-            <li><a class="contactSec" href="#contactSection"><h6>Hire Me!</h6></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <ul class="contact">
-          <li><a class="textContact" href="tel:915-342-3291"><p>
-            Phone: 915-342-3291
-          </p></a></li>
-          <li><a class="textContact" href="mailto:trossys@gmail.com?Subject=Let's%20discuss%20possible%20job%20opportunities!"><p>
-            Email: trossys@gmail.com
-          </p></a></li>
-          <li><a class="icon-linkedin icon-camera-retro icon-1x" href="https://www.linkedin.com/pub/tiffany-robinson/102/774/787"></a> <a class="icon-github-sign icon-camera-retro icon-1x" href="https://github.com/tiffanyRossyRobinson"></a></li>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="mainSec" href="#mainSection"><h6>Home</h6></a></li>
+          <li><a  class="aboutMe" href="#meSection"><h6>About</h6></a></li>
+          <li><a class="resumeSec" href="#resumeSection"><h6>Resume</h6></a></li>
+          <li><a class="contactSec" href="#contactSection"><h6>Hire Me!</h6></a></li>
         </ul>
+
       </div>
-  </div>
-</div>
-<div class="mainContent">
-
-
+    </div>
+  </nav>
+</header>
 
 <section class= "mainSection" id = "mainSection">
-  <h1>Tiffany R. Robinson</h1>
+  <h1 class="wow pulse">Tiffany R. Robinson</h1>
   <h4>Front-End Web Developer</h4>
 
-    <div class="learnMore">
-      <a href="#meSection">Make A Move</a>
-    </div>
+  <a class="learnMore" href="#meSection">Make A Move</a>
 
 </section>
 <section class= "meSection" id = "meSection">
@@ -48,19 +31,39 @@
       <p>
         In April 2015, after years of living in Texas, my family and I decided to move to Charleston, SC. With this new move came the opportunity to take the leap and change the direction my career was headed. I recently graduated from The Iron Yard in the Front-End Engineering program. I am ready to continue my journey and find a position that allows me to challenge myself daily, constantly learn, and create and build exciting products!
       </p>
+      <a class="learnMore" href="#resumeSection">My Work</a>
     </li>
-    <li><img class="wow pulse" src="/css/me.jpg" width="200" alt="" /></li>
+    <li class="myPic"><img class="wow bounce" src="/css/me.jpg" width="200" alt="" /></li>
 
   </ul>
 </section>
 
 <section class= "resumeSection" id = "resumeSection">
-  <div class="wow fadeIn sideResume">
+
+  <div class="resumeWork col-md-8">
+    <div class="linkToResume">
+      <a href="views/tiffany_robinson_resume.pdf"><i class="icon-download-alt icon-2x"><br><h6>Download Resume</h6></i></a>
+    </div>
+    <h3>Check Out My Work!</h3>
+    <ul>
+      <li class="wow bounceInLeft halibut"><a href="http://justhalibut.herokuapp.com/#/" target="_blank"> <img src="css/halibut.jpg"/><h4>Just For The Halibut</h4> <p>
+        A fishing application that allows the user to submit the fish they have caught with statistics that are used in an algorithm to raise their achievement levels. In addition, users can view fish caught in their area along with the top ranked fisherman.
+      </p></a></li>
+      <li class="wow bounceInUp placeMe"><a href="http://tiffanyrossyrobinson.github.io/tango/" target="_blank"><img src="css/placeme.jpg"/><h4>PlaceMe</h4> <p>
+      Through a series of questions, the application is able to introduce the user to places around America they would enjoy but never would have thought of.
+      </p></a></li>
+      <li class="wow bounceInRight peralta"><a href="http://tiffanyrossyrobinson.github.io/DayFourResponsive/" target="_blank"><img src="css/peralta.jpg"/><h4>Powell Peralta</h4><p>
+        A layout of a Powell Peralta site that uses HTML and CSS to create a responsive webpage.
+      </p></a></li>
+    </ul>
+  </div>
+
+  <div class="wow fadeIn col-md-4 sideResume">
 
     <h3>Education: </h3>
     <p>
-      - The Iron Yard (August 2015) <br>Front-End Engineering <br>
-      - The University of Texas at El Paso (December 2011) <br> BS Electrical Engineering  <br>
+      - The Iron Yard (August 2015) <br>Front-End Engineering <br> <br>
+      - The University of Texas at El Paso (December 2011) <br> BS Electrical Engineering
     </p>
     <h3>Toolbox: </h3>
     <p>
@@ -71,17 +74,9 @@
     <p>
       DOD Secret Clearance
     </p>
-  </div>
-  <div class="resumeWork">
-    <div class="linkToResume">
-      <a href="views/tiffany_robinson_resume.pdf"><i class="icon-download-alt icon-2x"></i></a>
-    </div>
-    <h3>Check Out My Work!</h3>
-    <ul>
-      <li class="wow bounceInLeft halibut"><a href="http://justhalibut.herokuapp.com/#/"><h4>Just For The Halibut</h4></a></li>
-      <li class="wow bounceInUp placeMe"><a href="http://tiffanyrossyrobinson.github.io/tango/"><h4>PlaceMe</h4></a></li>
-      <li class="wow bounceInRight peralta"><a href="http://tiffanyrossyrobinson.github.io/DayFourResponsive/"><h4>Powell Peralta</h4></a></li>
-    </ul>
+
+    <a class="learnMore" href="#contactSection">Contact Me!</a>
+
   </div>
 
 
@@ -104,12 +99,11 @@
             <ul class="hireContact">
               <li><a  href="tel:915-342-3291"><i class="icon-phone icon-4x"></i>915.342.3291</a></li>
               <li><a  href="mailto:trossys@gmail.com?Subject=Let's%20discuss%20possible%20job%20opportunities!"><i class="icon-envelope icon-4x"></i>trossys@gmail.com</a></li>
-              <li><a href="https://www.linkedin.com/pub/tiffany-robinson/102/774/787"><i class="icon-linkedin icon-4x"></i>Connect on LinkedIn</a></li>
+              <li><a href="https://www.linkedin.com/pub/tiffany-robinson/102/774/787" target="_blank"><i class="icon-linkedin icon-4x"></i>Connect on LinkedIn</a></li>
+              <li><a href="https://www.linkedin.com/pub/tiffany-robinson/102/774/787" target="_blank"><i class="icon-github-sign icon-4x"></i>Follow on GitHub</a></li>
             </ul>
           </div>
         </div>
     </div>
 
 </section>
-
-</div>

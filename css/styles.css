@@ -1,214 +1,479 @@
-.header {
+body {
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  padding-top: 35px; }
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  font-family: 'Antic', sans-serif; }
+
+.container-fluid {
+  background-color: #332C26; }
+
+.nav h6 {
+  color: #337ab7;
+  font-family: 'Antic', sans-serif;
+  text-shadow: none;
+  font-size: 1.1em; }
+
+.nav a {
+  color: #337ab7;
+  z-index: 100; }
+
+.nav a:hover {
+  color: #00FFFF; }
+
+.mainSection {
+  min-height: 72.9rem;
+  background-image: url("http://socialventurepartners.org.s3.amazonaws.com/www.socialventurepartners.org/sites/48/2013/05/CharlestonSlider.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: relative;
+  background-position: center;
+  text-align: center; }
+  .mainSection h1 {
+    padding-top: 10%;
+    font-family: 'Dancing Script', cursive;
+    font-size: 6em; }
+  .mainSection h4 {
+    font-family: 'Antic', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 3%; }
+  .mainSection .learnMore {
+    font-family: 'Antic', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    border: 1px dashed white;
+    padding: 1%;
+    color: #337ab7;
+    background-color: #332C26; }
+  .mainSection .learnMore:hover {
+    background-color: white;
+    color: #332C26;
+    text-decoration: none; }
+
+.meSection {
+  background-color: white;
+  border: 1px solid black;
+  min-height: 72.9rem; }
+  .meSection ul {
+    list-style: none;
+    padding-top: 10%;
+    font-family: 'Antic', sans-serif; }
+  .meSection li {
+    display: inline-block;
+    width: 40%;
+    margin-left: 5%;
+    text-align: justify;
+    vertical-align: middle; }
+    .meSection li h4 {
+      font-size: 4rem;
+      text-align: center;
+      color: #332C26;
+      text-shadow: #337ab7 0px 0px 1px; }
+    .meSection li p {
+      padding-top: 4%;
+      font-size: 2rem;
+      line-height: 150%;
+      margin-bottom: 10%; }
+    .meSection li .learnMore {
+      font-family: 'Antic', sans-serif;
+      font-weight: 400;
+      font-size: 2rem;
+      border: 1px dashed black;
+      padding: 1%;
+      color: #337ab7;
+      background-color: #332C26;
+      margin-left: 35%;
+      margin-top: 5%; }
+    .meSection li .learnMore:hover {
+      background-color: white;
+      color: #332C26;
+      text-decoration: none; }
+  .meSection .myPic {
+    text-align: center; }
+    .meSection .myPic img {
+      border-radius: 50%;
+      border: 4px solid #332C26; }
+
+.resumeSection {
+  border: 1px solid black;
+  min-height: 72.9rem;
+  padding-top: 10%;
+  font-family: 'Antic', sans-serif; }
+  .resumeSection .sideResume {
+    border-left: 1px solid black; }
+    .resumeSection .sideResume h3 {
+      font-size: 2.5rem;
+      text-align: center;
+      color: #332C26;
+      text-shadow: #337ab7 0px 0px 1px;
+      margin-bottom: 5%; }
+    .resumeSection .sideResume p {
+      font-size: 1.5rem;
+      text-align: center;
+      color: #332C26;
+      line-height: 150%;
+      margin-bottom: 10%; }
+    .resumeSection .sideResume .learnMore {
+      font-family: 'Antic', sans-serif;
+      font-weight: 400;
+      font-size: 2rem;
+      border: 1px dashed black;
+      padding: 1%;
+      color: #337ab7;
+      background-color: #332C26;
+      margin-left: 35%;
+      margin-top: 3%; }
+    .resumeSection .sideResume .learnMore:hover {
+      background-color: white;
+      color: #332C26;
+      text-decoration: none; }
+  .resumeSection .resumeWork .linkToResume {
+    text-align: center;
+    width: 20%; }
+  .resumeSection .resumeWork h3 {
+    text-align: center;
+    font-size: 3rem;
+    text-align: center;
+    color: #332C26;
+    text-shadow: #337ab7 0px 0px 1px; }
+  .resumeSection .resumeWork ul {
+    list-style: none;
+    margin-top: 5%; }
+  .resumeSection .resumeWork li {
+    border: 1px solid black;
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 1%;
+    margin-right: 2%;
+    height: 39rem;
+    -webkit-box-shadow: 10px 10px 5px 0px #d9d5d9;
+    -moz-box-shadow: 10px 10px 5px 0px #d9d5d9;
+    box-shadow: 10px 10px 5px 0px #d9d5d9; }
+    .resumeSection .resumeWork li img {
+      width: 200px; }
+
+.contactSection {
+  border: 1px solid black;
+  min-height: 72.9rem;
+  padding-top: 10%;
+  font-family: 'Antic', sans-serif; }
+  .contactSection .carousel h4 {
+    font-weight: 600;
+    font-size: 3rem;
+    color: #332C26;
+    text-shadow: #332C26 0px 0px 1px; }
+  .contactSection .carousel p {
+    font-size: 2rem;
+    color: #00FFFF;
+    text-shadow: #332C26 0px 0px 1px; }
+  .contactSection .carousel .carousel-caption {
+    background-color: grey;
+    opacity: 0.9; }
+  .contactSection .hireContact {
+    list-style: none;
+    text-align: center;
+    background-color: #332C26;
+    margin-left: 0;
+    height: 15rem;
+    padding-top: 2%; }
+    .contactSection .hireContact li {
+      display: inline-block;
+      text-align: center;
+      margin-right: 3%;
+      font-size: 1.5rem; }
+      .contactSection .hireContact li i {
+        display: block; }
+    .contactSection .hireContact a {
+      text-decoration: none; }
+    .contactSection .hireContact a:hover {
+      color: #00FFFF; }
+
+/*
+.header{
   background-color: #332C26;
   width: 100%;
   position: fixed;
   display: block;
   z-index: 3;
-  top: 0; }
-  .header ul {
-    list-style: none; }
-  .header h6 {
+  top:0;
+  left:0;
+  height:12vh;
+  ul{
+    list-style: none;
+  }
+  h6{
     text-decoration: none;
     font-size: 20px;
-    color: #2FB8AC;
-    font-family: 'Nova Oval', cursive; }
-  .header h6:hover {
-    text-decoration: none;
-    color: white; }
-  .header .row {
-    border: 5px solid black;
-    border-radius: 5%; }
-  .header .navLinks {
+    color: $teal;
+    font-family: 'Nova Oval', cursive;
+  }
+  h6:hover{
+    text-decoration:none;
+    color:white;
+  }
+.row{
+  border: 5px solid black;
+  border-radius: 5%;
+}
+  .navLinks{
     padding-top: 4%;
-    text-align: center; }
-    .header .navLinks li {
+    text-align: center;
+    li{
       display: inline-block;
       font-size: 20px;
-      padding-right: 5%; }
-  .header .contact {
+      padding-right: 5%;
+    }
+  }
+
+  .contact{
     text-align: right;
-    padding-right: 3%; }
-    .header .contact a {
-      color: #2FB8AC; }
-    .header .contact a:hover {
-      color: white;
-      text-decoration: none; }
-    .header .contact p {
+    padding-right: 3%;
+    a{
+      color: $teal;
+    }
+    a:hover{
+      color:white;
+      text-decoration:none;
+    }
+
+    p{
       font-family: 'Nova Oval', cursive;
       font-size: 15px;
-      text-decoration: none; }
-  .header .name {
+      text-decoration: none;
+    }
+  }
+  .name{
     text-align: left;
-    padding-left: 3%; }
-    .header .name a {
+    padding-left: 3%;
+    a{
       font-size: 30px;
-      font-family: 'Swanky and Moo Moo', cursive; }
-
-.mainSection {
-  height: 100vh;
-  padding-top: 10%;
-  background-image: url("http://images.nationalgeographic.com/wpf/media-live/photos/000/235/cache/free-cities-charleston_23573_600x450.jpg");
+      font-family: 'Swanky and Moo Moo', cursive;
+    }
+  }
+} */
+/*
+//------------------------main section styling -------------------------------//
+.mainSection{
+margin-top:8%;
+  height: 88vh;
+  background-image: url('http://socialventurepartners.org.s3.amazonaws.com/www.socialventurepartners.org/sites/48/2013/05/CharlestonSlider.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: relative;
   background-position: center;
-  font-family: 'Swanky and Moo Moo', cursive; }
-  .mainSection .learnMore {
+  font-family: 'Swanky and Moo Moo', cursive;
+
+  .learnMore{
     margin-top: 8%;
     width: 40%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto; }
-    .mainSection .learnMore a {
-      color: #2FB8AC;
-      width: 100%;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    a{
+      color: $teal;
+      width:100%;
       font-size: 40px;
       background-color: #332C26;
       padding: 4px;
-      text-align: center; }
-    .mainSection .learnMore a:hover {
+      text-align: center;
+    }
+    a:hover{
       color: white;
-      text-decoration: none; }
-  .mainSection h1 {
+      text-decoration: none;
+    }
+  }
+  h1{
     font-size: 80px;
-    text-align: center; }
-  .mainSection h4 {
-    font-size: 60px;
-    text-align: center; }
+    text-align:center;
+    padding-top:9%;
 
-.meSection {
+  }
+  h4{
+    font-size: 60px;
+    text-align:center;
+  }
+
+}
+ */
+/* //-----------------about section styling -------------------------------------//
+.meSection{
   padding-top: 2%;
   background-color: #FFB884;
-  height: 100vh; }
-  .meSection ul {
-    font-family: 'Swanky and Moo Moo', cursive;
-    text-align: center;
-    margin-top: 5%; }
-    .meSection ul li {
+  height: 88vh;
+  ul{
+    font-family: 'Antic', sans-serif;
+    text-align:center;
+    margin-top:5%;
+    li{
       display: inline-block;
-      vertical-align: middle;
+      vertical-align:middle;
       width: 40%;
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto; }
-      .meSection ul li img {
+      text-align:center;
+      margin-left:auto;
+      margin-right:auto;
+      img{
         border-radius: 50%;
-        vertical-align: middle;
-        border: 2px solid #2FB8AC; }
-      .meSection ul li h4 {
-        font-size: 50px;
-        text-shadow: #2FB8AC 0px 0px 1px;
-        font-weight: bolder; }
-      .meSection ul li p {
-        font-size: 25px;
-        line-height: 120%;
-        font-family: 'Nova Oval', cursive; }
+        vertical-align:middle;
+        border: 2px solid $teal;
 
-.resumeSection {
+      }
+      h4{
+        font-size: 50px;
+        text-shadow: $teal 0px 0px 1px;
+        font-weight:bolder;
+      }
+      p{
+        font-size:25px;
+        line-height:120%;
+        font-family: 'Antic', sans-serif;
+      }
+    }
+  }
+}
+ */
+/* //-----------------resume section styling ------------------------------------//
+
+.resumeSection{
   padding-top: 2%;
   background-color: #E8D3A9;
-  height: 100vh;
-  border: 1px solid black;
-  font-family: 'Swanky and Moo Moo', cursive; }
-  .resumeSection .sideResume {
-    width: 28%;
-    display: inline-block;
+  height: 88vh;
+  border:1px solid black;
+  font-family: 'Antic', sans-serif;
+  .sideResume{
+    width:28%;
+    display:inline-block;
     padding-left: 2%;
     padding-right: 2%;
-    border-right: 1px dashed #332C26; }
-    .resumeSection .sideResume p {
-      font-family: 'Nova Oval', cursive;
-      text-align: center; }
-  .resumeSection .linkToResume {
-    padding-right: 3%;
-    text-align: right; }
-    .resumeSection .linkToResume a {
-      color: #332C26; }
-    .resumeSection .linkToResume a:hover {
-      text-decoration: none;
-      color: #2FB8AC; }
-  .resumeSection .resumeWork {
-    width: 68%;
-    display: inline-block;
-    vertical-align: top; }
-  .resumeSection h3 {
+    border-right: 1px dashed #332C26;
+    p{
+      font-family: 'Antic', sans-serif;
+      text-align:center;
+    }
+  }
+  .linkToResume{
+    padding-right:3%;
+    text-align:right;
+    a{
+      color:$brown;
+    }
+    a:hover{
+      text-decoration:none;
+      color:$teal;
+    }
+  }
+  .resumeWork{
+    width:68%;
+    display:inline-block;
+    vertical-align: top;
+  }
+  h3{
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15%;
-    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:15%;
+    text-align:center;
     font-size: 50px;
-    text-shadow: #2FB8AC 0px 0px 1px;
-    font-weight: bolder; }
-  .resumeSection ul {
-    text-decoration: none;
-    width: 100%;
-    margin-top: 4%;
-    padding-left: 20%;
-    margin-left: auto;
-    margin-right: auto; }
-    .resumeSection ul li {
-      display: inline-block;
-      width: 10em;
-      height: 10em;
-      padding-top: 3em;
-      text-align: center;
-      vertical-align: bottom;
-      border-radius: 100%;
-      border: 4px solid #332C26;
-      margin-right: 5%; }
-      .resumeSection ul li h4 {
-        padding: 4%;
-        font-weight: bolder;
-        font-size: 22px;
-        color: #2FB8AC;
-        background-color: #332C26;
-        border-radius: 40%; }
-  .resumeSection .placeMe {
-    background-image: url("placeme.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: relative;
-    background-position: center; }
-  .resumeSection .halibut {
-    background-image: url("halibut.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: relative;
-    background-position: center; }
-  .resumeSection .peralta {
-    background-image: url("peralta.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: relative;
-    background-position: center; }
+    text-shadow: $teal 0px 0px 1px;
+    font-weight:bolder;
+  }
+  ul{
+    text-decoration:none;
+    width:100%;
+    margin-top:4%;
+    padding-left:20%;
+    margin-left:auto;
+    margin-right:auto;
 
-.contactSection {
+    li{
+      display:inline-block;
+      width:10em;
+      height:10em;
+      padding-top:3em;
+      text-align:center;
+      vertical-align:bottom;
+      border-radius:100%;
+      border: 4px solid #332C26;
+      margin-right:5%;
+      h4{
+          padding:4%;
+          font-weight:bolder;
+          font-size: 22px;
+          color: $teal;
+          background-color:#332C26;
+          border-radius:40%;
+      }
+    }
+  }
+  .placeMe{
+    background-image: url('placeme.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: relative;
+    background-position: center;
+  }
+  .halibut{
+    background-image: url('halibut.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: relative;
+    background-position: center;
+  }
+  .peralta{
+    background-image: url('peralta.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: relative;
+    background-position: center;
+  }
+}
+ */
+/* //-----------------contact section styling -----------------------------------//
+.contactSection{
   padding-top: 2%;
-  background-color: #FFB884;
-  height: 100vh;
-  border: 1px solid black;
-  font-family: 'Nova Oval', cursive; }
-  .contactSection .carousel h4 {
-    color: #2FB8AC;
-    font-weight: bold; }
-  .contactSection .carousel p {
-    font-size: 20px;
-    /*   text-shadow: $brown 0px 0px 1px; */ }
-  .contactSection ul {
-    text-decoration: none;
+  background-color: white;
+  height: 88vh;
+  border:1px solid black;
+  font-family: 'Antic', sans-serif;
+  .carousel{
+    h4{
+      color:$teal;
+      font-weight:bold;
+    }
+    p{
+      font-size:20px;
+      color: #FFB884;
+    text-shadow: $brown 0px 0px 1px;
+    }
+  }
+  ul{
+    text-decoration:none;
     width: 80%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2%; }
-    .contactSection ul li {
-      display: inline-block;
-      margin-right: 3%; }
-      .contactSection ul li a {
-        color: #332C26; }
-      .contactSection ul li a:hover {
-        color: #2FB8AC;
-        text-decoration: none; }
-      .contactSection ul li i {
-        display: block; }
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:2%;
+    li{
+      display:inline-block;
+      margin-right:3%;
+      a{
+        color:$brown;
+      }
+      a:hover{
+        color:$teal;
+        text-decoration:none;
+      }
+      i{
+        display:block;
+      }
+    }
+  }
+}
+ */

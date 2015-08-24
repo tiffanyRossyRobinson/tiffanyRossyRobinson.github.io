@@ -14,7 +14,7 @@
 
         slides.push({
           title: 'Lucius Nelson: Front-End Web Developer',
-          image: 'http://static3.businessinsider.com/image/51ec7535eab8ea9505000020/huge-justice-league-superhero-movie-may-be-coming-in-2017.jpg',
+          image: 'http://images.clipartpanda.com/superhero-clip-art-yioe5BMRT.svg',
           text: '"Tiffany is a superhero who’s day-job is programming. Unbeknownst to her colleagues, she is able to learn and tackle complex problems at rates previously thought impossible for the human mind. Despite her abnormal propensity for mastery, Tiffany is beyond humble as a co-worker. In short, if they ever establish a Justice League of programming, I would nominate Tiffany as a promising up and comer."'
         });
         slides.push({

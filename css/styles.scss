@@ -1,7 +1,254 @@
-$teal: #2FB8AC;
+$teal: #337ab7;
 $brown: #332C26;
 
+body{
+  top:0;
+  bottom:0;
+  margin:0;
+  padding-top: 35px;
+}
 
+header{
+  width:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:3;
+  font-family: 'Antic', sans-serif;
+}
+.container-fluid{
+  background-color:$brown;
+}
+.nav h6{
+  color:$teal;
+  font-family: 'Antic', sans-serif;
+  text-shadow: none;
+  font-size: 1.1em;
+}
+
+.nav a{
+  color:$teal;
+  z-index:100;
+}
+.nav a:hover{
+  color:#00FFFF;
+
+}
+
+//--------------------Main Section -------------------------------------------//
+
+.mainSection{
+  min-height:72.9rem;
+  background-image: url('http://socialventurepartners.org.s3.amazonaws.com/www.socialventurepartners.org/sites/48/2013/05/CharlestonSlider.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: relative;
+  background-position: center;
+  text-align:center;
+  h1{
+    padding-top: 10%;
+    font-family: 'Dancing Script', cursive;
+    font-size: 6em;
+  }
+  h4{
+    font-family: 'Antic', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 3%;
+  }
+  .learnMore{
+    font-family: 'Antic', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    border: 1px dashed white;
+    padding: 1%;
+    color:$teal;
+    background-color:$brown;
+  }
+  .learnMore:hover{
+    background-color: white;
+    color: $brown;
+    text-decoration:none;
+  }
+}
+
+//---------------------------About Section -----------------------------------//
+.meSection{
+  background-color: white;
+  border: 1px solid black;
+  min-height:72.9rem;
+  ul{
+    list-style: none;
+    padding-top:10%;
+    font-family: 'Antic', sans-serif;
+  }
+  li{
+    display:inline-block;
+    width:40%;
+    margin-left:5%;
+    text-align:justify;
+    vertical-align:middle;
+    h4{
+      font-size: 4rem;
+      text-align:center;
+      color:$brown;
+      text-shadow: $teal 0px 0px 1px;
+    }
+    p{
+      padding-top:4%;
+      font-size: 2rem;
+      line-height: 150%;
+      margin-bottom:10%;
+    }
+    .learnMore{
+      font-family: 'Antic', sans-serif;
+      font-weight: 400;
+      font-size: 2rem;
+      border: 1px dashed black;
+      padding: 1%;
+      color:$teal;
+      background-color:$brown;
+      margin-left:35%;
+      margin-top:5%;
+    }
+    .learnMore:hover{
+      background-color: white;
+      color: $brown;
+      text-decoration:none;
+    }
+  }
+  .myPic{
+    text-align:center;
+    img{
+      border-radius: 50%;
+      border: 4px solid $brown;
+    }
+  }
+}
+
+//---------------------------Resume Section ----------------------------------//
+.resumeSection{
+  border: 1px solid black;
+  min-height:72.9rem;
+  padding-top:10%;
+  font-family: 'Antic', sans-serif;
+  .sideResume{
+    border-left:1px solid black;
+    h3{
+      font-size:2.5rem;
+      text-align:center;
+      color:$brown;
+      text-shadow: $teal 0px 0px 1px;
+      margin-bottom: 5%;
+    }
+    p{
+      font-size: 1.5rem;
+      text-align: center;
+      color:$brown;
+      line-height:150%;
+      margin-bottom: 10%;
+    }
+    .learnMore{
+      font-family: 'Antic', sans-serif;
+      font-weight: 400;
+      font-size: 2rem;
+      border: 1px dashed black;
+      padding: 1%;
+      color:$teal;
+      background-color:$brown;
+      margin-left:35%;
+      margin-top: 3%;
+    }
+    .learnMore:hover{
+      background-color: white;
+      color: $brown;
+      text-decoration:none;
+    }
+  }
+  .resumeWork{
+    .linkToResume{
+      text-align:center;
+      width:20%;
+    }
+    h3{
+      text-align:center;
+      font-size:3rem;
+      text-align:center;
+      color:$brown;
+      text-shadow: $teal 0px 0px 1px;
+    }
+    ul{
+      list-style:none;
+      margin-top: 5%;
+    }
+    li{
+      border: 1px solid black;
+      display:inline-block;
+      width:30%;
+      vertical-align:top;
+      padding:1%;
+      margin-right:2%;
+      height:39rem;
+      -webkit-box-shadow: 10px 10px 5px 0px rgba(217,213,217,1);
+      -moz-box-shadow: 10px 10px 5px 0px rgba(217,213,217,1);
+      box-shadow: 10px 10px 5px 0px rgba(217,213,217,1);
+      img{
+        width:200px;
+      }
+    }
+
+  }
+}
+
+//---------------------------contact Section ---------------------------------//
+
+.contactSection{
+  border: 1px solid black;
+  min-height:72.9rem;
+  padding-top:10%;
+  font-family: 'Antic', sans-serif;
+  .carousel{
+    h4{
+      font-weight:600;
+      font-size:3rem;
+      color: $brown;
+      text-shadow: $brown 0px 0px 1px;
+    }
+    p{
+      font-size:2rem;
+      color: #00FFFF;
+      text-shadow: $brown 0px 0px 1px;
+    }
+    .carousel-caption{
+      background-color:grey;
+      opacity: 0.9;
+    }
+  }
+  .hireContact{
+    list-style:none;
+    text-align:center;
+    background-color:$brown;
+    margin-left:0;
+    height:15rem;
+    padding-top:2%;
+    li{
+      display:inline-block;
+      text-align:center;
+      margin-right:3%;
+      font-size:1.5rem;
+      i{
+        display:block;
+      }
+    }
+    a{
+      text-decoration:none;
+    }
+    a:hover{
+      color:#00FFFF;
+    }
+  }
+}
+
+/*
 .header{
   background-color: #332C26;
   width: 100%;
@@ -9,6 +256,8 @@ $brown: #332C26;
   display: block;
   z-index: 3;
   top:0;
+  left:0;
+  height:12vh;
   ul{
     list-style: none;
   }
@@ -22,10 +271,10 @@ $brown: #332C26;
     text-decoration:none;
     color:white;
   }
-  .row{
-    border: 5px solid black;
-    border-radius: 5%;
-  }
+.row{
+  border: 5px solid black;
+  border-radius: 5%;
+}
   .navLinks{
     padding-top: 4%;
     text-align: center;
@@ -61,14 +310,14 @@ $brown: #332C26;
       font-family: 'Swanky and Moo Moo', cursive;
     }
   }
-}
+} */
 
-
+/*
 //------------------------main section styling -------------------------------//
 .mainSection{
-  height: 100vh;
-  padding-top: 10%;
-  background-image: url('http://images.nationalgeographic.com/wpf/media-live/photos/000/235/cache/free-cities-charleston_23573_600x450.jpg');
+margin-top:8%;
+  height: 88vh;
+  background-image: url('http://socialventurepartners.org.s3.amazonaws.com/www.socialventurepartners.org/sites/48/2013/05/CharlestonSlider.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: relative;
@@ -97,6 +346,7 @@ $brown: #332C26;
   h1{
     font-size: 80px;
     text-align:center;
+    padding-top:9%;
 
   }
   h4{
@@ -105,14 +355,14 @@ $brown: #332C26;
   }
 
 }
-
-//-----------------about section styling -------------------------------------//
+ */
+/* //-----------------about section styling -------------------------------------//
 .meSection{
   padding-top: 2%;
   background-color: #FFB884;
-  height: 100vh;
+  height: 88vh;
   ul{
-    font-family: 'Swanky and Moo Moo', cursive;
+    font-family: 'Antic', sans-serif;
     text-align:center;
     margin-top:5%;
     li{
@@ -136,20 +386,20 @@ $brown: #332C26;
       p{
         font-size:25px;
         line-height:120%;
-        font-family: 'Nova Oval', cursive;
+        font-family: 'Antic', sans-serif;
       }
     }
   }
 }
-
-//-----------------resume section styling ------------------------------------//
+ */
+/* //-----------------resume section styling ------------------------------------//
 
 .resumeSection{
   padding-top: 2%;
   background-color: #E8D3A9;
-  height: 100vh;
+  height: 88vh;
   border:1px solid black;
-  font-family: 'Swanky and Moo Moo', cursive;
+  font-family: 'Antic', sans-serif;
   .sideResume{
     width:28%;
     display:inline-block;
@@ -157,7 +407,7 @@ $brown: #332C26;
     padding-right: 2%;
     border-right: 1px dashed #332C26;
     p{
-      font-family: 'Nova Oval', cursive;
+      font-family: 'Antic', sans-serif;
       text-align:center;
     }
   }
@@ -237,14 +487,14 @@ $brown: #332C26;
     background-position: center;
   }
 }
-
-//-----------------contact section styling -----------------------------------//
+ */
+/* //-----------------contact section styling -----------------------------------//
 .contactSection{
   padding-top: 2%;
-  background-color: #FFB884;
-  height: 100vh;
+  background-color: white;
+  height: 88vh;
   border:1px solid black;
-  font-family: 'Nova Oval', cursive;
+  font-family: 'Antic', sans-serif;
   .carousel{
     h4{
       color:$teal;
@@ -252,7 +502,8 @@ $brown: #332C26;
     }
     p{
       font-size:20px;
-    /*   text-shadow: $brown 0px 0px 1px; */
+      color: #FFB884;
+    text-shadow: $brown 0px 0px 1px;
     }
   }
   ul{
@@ -278,3 +529,4 @@ $brown: #332C26;
     }
   }
 }
+ */
