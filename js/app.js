@@ -4,8 +4,8 @@
   angular
     .module('tiffany', [
       'ngRoute',
-      'underscore',
-      'ui.bootstrap'
+      'ngAnimate',
+      'ngMaterial'
     ])
     .config(function ($routeProvider) {
       $routeProvider
@@ -20,11 +20,6 @@
           redirectTo: '/404'
         });
     });
-    angular
-      .module('underscore', [])
-      .factory('_', function ($window) {
-        return $window._;
-      });
       angular
         .module('WOW', [])
         .factory('WOW', function ($window) {

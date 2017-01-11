@@ -1,479 +1,423 @@
-body {
-  top: 0;
-  bottom: 0;
-  margin: 0;
-  padding-top: 35px; }
+/** {
+  font-family: 'Arima Madurai', cursive;
+}
 
-header {
-  width: 100%;
+.header {
   position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 3;
-  font-family: 'Antic', sans-serif; }
-
-.container-fluid {
-  background-color: #332C26; }
-
-.nav h6 {
-  color: #337ab7;
-  font-family: 'Antic', sans-serif;
-  text-shadow: none;
-  font-size: 1.1em; }
-
-.nav a {
-  color: #337ab7;
-  z-index: 100; }
-
-.nav a:hover {
-  color: #00FFFF; }
-
-.mainSection {
-  min-height: 74.9rem;
-  background-image: url("http://socialventurepartners.org.s3.amazonaws.com/www.socialventurepartners.org/sites/48/2013/05/CharlestonSlider.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: relative;
-  background-position: center;
-  text-align: center; }
-  .mainSection h1 {
-    padding-top: 10%;
-    font-family: 'Dancing Script', cursive;
-    font-size: 6em; }
-  .mainSection h4 {
-    font-family: 'Antic', sans-serif;
-    font-size: 3rem;
-    margin-bottom: 3%; }
-  .mainSection .learnMore {
-    font-family: 'Antic', sans-serif;
-    font-weight: 400;
-    font-size: 2rem;
-    border: 1px dashed white;
-    padding: 1%;
-    color: #337ab7;
-    background-color: #332C26; }
-  .mainSection .learnMore:hover {
-    background-color: white;
-    color: #332C26;
-    text-decoration: none; }
-
-.meSection {
-  background-color: white;
-  /*   border: 1px solid black; */
-  min-height: 72.9rem; }
-  .meSection ul {
-    list-style: none;
-    padding-top: 10%;
-    font-family: 'Antic', sans-serif; }
-  .meSection li {
-    display: inline-block;
-    width: 40%;
-    margin-left: 5%;
-    text-align: justify;
-    vertical-align: middle; }
-    .meSection li h4 {
-      font-size: 4rem;
-      text-align: center;
-      color: #332C26;
-      text-shadow: #337ab7 0px 0px 1px; }
-    .meSection li p {
-      padding-top: 4%;
-      font-size: 2rem;
-      line-height: 150%;
-      margin-bottom: 10%; }
-    .meSection li .learnMore {
-      font-family: 'Antic', sans-serif;
-      font-weight: 400;
-      font-size: 2rem;
-      border: 1px dashed black;
-      padding: 1%;
-      color: #337ab7;
-      background-color: #332C26;
-      margin-left: 35%;
-      margin-top: 5%; }
-    .meSection li .learnMore:hover {
-      background-color: white;
-      color: #332C26;
-      text-decoration: none; }
-  .meSection .myPic {
-    text-align: center; }
-    .meSection .myPic img {
-      border-radius: 50%;
-      border: 4px solid #332C26; }
-
-.resumeSection {
-  /*   border: 1px solid black; */
-  min-height: 72.9rem;
-  padding-top: 10%;
-  font-family: 'Antic', sans-serif; }
-  .resumeSection .sideResume {
-    border-left: 1px solid black; }
-    .resumeSection .sideResume h3 {
-      font-size: 2.5rem;
-      text-align: center;
-      color: #332C26;
-      text-shadow: #337ab7 0px 0px 1px;
-      margin-bottom: 5%; }
-    .resumeSection .sideResume p {
-      font-size: 1.5rem;
-      text-align: center;
-      color: #332C26;
-      line-height: 150%;
-      margin-bottom: 10%; }
-    .resumeSection .sideResume .learnMore {
-      font-family: 'Antic', sans-serif;
-      font-weight: 400;
-      font-size: 2rem;
-      border: 1px dashed black;
-      padding: 1%;
-      color: #337ab7;
-      background-color: #332C26;
-      margin-left: 35%;
-      margin-top: 3%; }
-    .resumeSection .sideResume .learnMore:hover {
-      background-color: white;
-      color: #332C26;
-      text-decoration: none; }
-  .resumeSection .resumeWork .linkToResume {
-    text-align: center;
-    width: 20%; }
-  .resumeSection .resumeWork h3 {
-    text-align: center;
-    font-size: 3rem;
-    text-align: center;
-    color: #332C26;
-    text-shadow: #337ab7 0px 0px 1px; }
-  .resumeSection .resumeWork ul {
-    list-style: none;
-    margin-top: 5%; }
-  .resumeSection .resumeWork li {
-    border: 1px solid black;
-    display: inline-block;
-    width: 30%;
-    vertical-align: top;
-    padding: 1%;
-    margin-right: 2%;
-    height: 39rem;
-    -webkit-box-shadow: 10px 10px 5px 0px #d9d5d9;
-    -moz-box-shadow: 10px 10px 5px 0px #d9d5d9;
-    box-shadow: 10px 10px 5px 0px #d9d5d9; }
-    .resumeSection .resumeWork li img {
-      width: 200px; }
-
-.contactSection {
-  /*   border: 1px solid black; */
-  min-height: 72.9rem;
-  padding-top: 10%;
-  font-family: 'Antic', sans-serif; }
-  .contactSection .carousel h4 {
-    font-weight: 600;
-    font-size: 3rem;
-    color: #332C26;
-    text-shadow: #332C26 0px 0px 1px; }
-  .contactSection .carousel p {
-    font-size: 2rem;
-    color: #00FFFF;
-    text-shadow: #332C26 0px 0px 1px; }
-  .contactSection .carousel .carousel-caption {
-    background-color: grey;
-    opacity: 0.9; }
-  .contactSection .hireContact {
-    list-style: none;
-    text-align: center;
-    background-color: #332C26;
-    margin-left: 0;
-    height: 15rem;
-    padding-top: 2%; }
-    .contactSection .hireContact li {
-      display: inline-block;
-      text-align: center;
-      margin-right: 3%;
-      font-size: 1.5rem; }
-      .contactSection .hireContact li i {
-        display: block; }
-    .contactSection .hireContact a {
-      text-decoration: none; }
-    .contactSection .hireContact a:hover {
-      color: #00FFFF; }
-
-/*
-.header{
-  background-color: #332C26;
+  margin-bottom: 100px;
+  z-index: 10;
   width: 100%;
-  position: fixed;
   display: block;
-  z-index: 3;
-  top:0;
-  left:0;
-  height:12vh;
-  ul{
-    list-style: none;
+  background-color: #003366;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+  .header .md-button {
+    margin: 0px; }
+  .header h3, .header h5 {
+    color: white;
+    display: inline-block; }
+  .header h3 {
+    vertical-align: bottom;
+    margin: 0;
+    margin-left: 3%;
+    vertical-align: middle;
   }
-  h6{
-    text-decoration: none;
-    font-size: 20px;
-    color: $teal;
-    font-family: 'Nova Oval', cursive;
+  .header .md-button{
+    margin-top: 1%;
   }
-  h6:hover{
-    text-decoration:none;
-    color:white;
-  }
-.row{
-  border: 5px solid black;
-  border-radius: 5%;
+  .header .md-subheader-inner {
+    padding: 0px 0px 0px 0px; }
+
+md-sidenav,
+md-sidenav.md-locked-open,
+md-sidenav.md-closed.md-locked-open-add-active {
+  min-width: 150px !important;
+  width: 5vw !important;
+  max-width: 250px !important; }
+
+
+.sideButton {
+  width: 100%;
+  text-transform: none;
+  text-align: left;
+  padding-left: 10%;
+  color: grey;
+  font-weight: bold; }
+
+.sideButton:hover {
+  margin-left: 0;
+  border-left: 5px solid #003366;
+  color: #003366;
+  font-weight: 300; }
+
+#scrollArea {
+  height: 100vh;
+  overflow: auto;
 }
-  .navLinks{
-    padding-top: 4%;
-    text-align: center;
-    li{
-      display: inline-block;
-      font-size: 20px;
-      padding-right: 5%;
-    }
-  }
 
-  .contact{
-    text-align: right;
-    padding-right: 3%;
-    a{
-      color: $teal;
-    }
-    a:hover{
-      color:white;
-      text-decoration:none;
-    }
-
-    p{
-      font-family: 'Nova Oval', cursive;
-      font-size: 15px;
-      text-decoration: none;
-    }
-  }
-  .name{
-    text-align: left;
-    padding-left: 3%;
-    a{
-      font-size: 30px;
-      font-family: 'Swanky and Moo Moo', cursive;
-    }
-  }
-} */
-/*
-//------------------------main section styling -------------------------------//
-.mainSection{
-margin-top:8%;
-  height: 88vh;
-  background-image: url('http://socialventurepartners.org.s3.amazonaws.com/www.socialventurepartners.org/sites/48/2013/05/CharlestonSlider.jpg');
+.content {
+  height: 90vh;
+  background-color: #f0f0f0;
+}
+.content .image {
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../css/desk.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: relative;
+  background-attachment: inherit;
   background-position: center;
-  font-family: 'Swanky and Moo Moo', cursive;
+  filter: grayscale(60%);
+  height: 80%; }
 
-  .learnMore{
-    margin-top: 8%;
-    width: 40%;
-    text-align:center;
-    margin-left:auto;
-    margin-right:auto;
-    a{
-      color: $teal;
-      width:100%;
-      font-size: 40px;
-      background-color: #332C26;
-      padding: 4px;
-      text-align: center;
-    }
-    a:hover{
-      color: white;
-      text-decoration: none;
-    }
+.dashButton {
+  width: 50%;
+  height: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 150px;
+  z-index: 15;
+  border: 2px solid white; }
+  .nameButton{
+    font-weight: bolder;
+    font-size:48px;
+    color: #00b8ff;
+    height: 50%;
+    width: 100%;
   }
-  h1{
-    font-size: 80px;
-    text-align:center;
-    padding-top:9%;
-
-  }
-  h4{
-    font-size: 60px;
-    text-align:center;
+  .nameButton:hover{
+    color: #003366;
   }
 
-}
- */
-/* //-----------------about section styling -------------------------------------//
-.meSection{
+
+  .content .allStuff {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f0f0f0;
+  }
+  .content .sectionBox {
+    margin-top: 50px;
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: black;
+    background-color: white;
+    box-shadow: 3px 5px 4px 0px #c7c7c7;
+    border-radius: 5px;
+    height: 90%; }
+
+  .messages {
+    border-bottom: 1px solid #003366;
+  }
+
+  .messages .sectionTitle{
+  text-align: left;
+  padding-left: 2%;
   padding-top: 2%;
-  background-color: #FFB884;
-  height: 88vh;
-  ul{
-    font-family: 'Antic', sans-serif;
-    text-align:center;
-    margin-top:5%;
-    li{
-      display: inline-block;
-      vertical-align:middle;
-      width: 40%;
-      text-align:center;
-      margin-left:auto;
-      margin-right:auto;
-      img{
-        border-radius: 50%;
-        vertical-align:middle;
-        border: 2px solid $teal;
+  padding-bottom: 2%; }
 
-      }
-      h4{
-        font-size: 50px;
-        text-shadow: $teal 0px 0px 1px;
-        font-weight:bolder;
-      }
-      p{
-        font-size:25px;
-        line-height:120%;
-        font-family: 'Antic', sans-serif;
-      }
-    }
+  .myPhoto {
+    width: 200px;
+    height: 250px;
+    border-radius: 50%;
+    border: 4px solid #003366;
   }
-}
- */
-/* //-----------------resume section styling ------------------------------------//
 
-.resumeSection{
-  padding-top: 2%;
-  background-color: #E8D3A9;
-  height: 88vh;
-  border:1px solid black;
-  font-family: 'Antic', sans-serif;
-  .sideResume{
-    width:28%;
-    display:inline-block;
+  .photoBox{
+    padding: 5% 5% 5% 5%;
+    text-align: center;
+  }
+
+  .description {
+    padding: 5% 5% 5% 5%;
+    text-align: justify;
+  }
+
+  .sectionScroll{
+    text-align: center;
     padding-left: 2%;
-    padding-right: 2%;
-    border-right: 1px dashed #332C26;
-    p{
-      font-family: 'Antic', sans-serif;
-      text-align:center;
-    }
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  .scrollButton{
+    width: 60%;
+    font-size: 24px;
+    background-color: #003366;
+    color: white;
+  }
+  .scrollButton:hover{
+    color: #003366;
+  }
+
+  .linkToResume{
+    text-align:right;
+    adding-left: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
   }
   .linkToResume{
-    padding-right:3%;
-    text-align:right;
-    a{
-      color:$brown;
-    }
-    a:hover{
-      text-decoration:none;
-      color:$teal;
-    }
+    color: #003366;
   }
-  .resumeWork{
-    width:68%;
-    display:inline-block;
-    vertical-align: top;
+  .resumeButton:hover{
+    color: #00b8ff;
   }
-  h3{
-    width: 80%;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:15%;
-    text-align:center;
-    font-size: 50px;
-    text-shadow: $teal 0px 0px 1px;
-    font-weight:bolder;
-  }
-  ul{
-    text-decoration:none;
-    width:100%;
-    margin-top:4%;
-    padding-left:20%;
-    margin-left:auto;
-    margin-right:auto;
 
-    li{
-      display:inline-block;
-      width:10em;
-      height:10em;
-      padding-top:3em;
-      text-align:center;
-      vertical-align:bottom;
-      border-radius:100%;
-      border: 4px solid #332C26;
-      margin-right:5%;
-      h4{
-          padding:4%;
-          font-weight:bolder;
-          font-size: 22px;
-          color: $teal;
-          background-color:#332C26;
-          border-radius:40%;
-      }
-    }
-  }
-  .placeMe{
-    background-image: url('placeme.jpg');
+  .sectionBox .cardImage {
+  width: 100%;
+  height: 13em;
+  background-image: url("../css/halibut.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: relative;
+  background-position: top;
+  border-radius: 5px 5px 0px 0px; }
+.sectionBox .cardImage2 {
+  width: 100%;
+  height: 13em;
+  background-image: url("../css/placeme.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: relative;
+  background-position: top;
+  border-radius: 5px 5px 0px 0px; }
+.sectionBox .cardImage3 {
+  width: 100%;
+  height: 13em;
+  background-image: url("../css/peralta.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: relative;
+  background-position: top;
+  border-radius: 5px 5px 0px 0px; }
+
+.sectionBox md-card .md-actions .md-button {
+  margin: 0;
+  bottom: 0;
+}
+.sectionBox md-card-footer {
+  padding: 10px 0px 0px 0px;
+  bottom: 0;
+  background-color: #003366;
+  border-radius: 0px 0px 5px 5px; }
+  .sectionBox md-card-footer .md-button {
+    padding: 0;
+    min-width: 20px; }
+
+.sectionBox .cardSection{
+  margin-top: 1%;
+}
+
+md-card {
+  display: inline-block;
+  border-radius: 5px; }
+
+md-card:hover{
+  background-color: #f0f0f0;
+}
+md-card:hover md-card-footer{
+  background-color: #00b8ff;
+}
+md-card:hover .topOfCard {
+  background-color: #00b8ff;
+}
+
+md-card:hover .topOfCard h4{
+  color: #003366;
+}
+
+.topOfCard {
+  width: 100%;
+  height: 40px;
+  background-color: #003366;
+  margin-top: 5%;
+  text-align: center;
+ }
+
+ .topOfCard h4{
+   margin-top: auto;
+   margin-bottom: auto;
+   color: white;
+ }
+
+md-card-content p {
+  color: #003366;
+  overflow: scroll;
+  font-size: 12px;
+  text-align: center; }
+
+md-card-content {
+  height: 90px;
+  margin-bottom: 2%; }
+
+  .chats {
+    width: 60%;
+    margin: 2%;
+    border: 3px solid #003366;
+    padding: 2% 2% 0% 2%;
+    border-radius: 5px;
+    background-image: url("../css/chat2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: relative;
+    background-attachment: inherit;
     background-position: center;
   }
-  .halibut{
-    background-image: url('halibut.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: relative;
-    background-position: center;
+
+  .contactMethods {
+    width: 60%;
+    margin: 2%;
+    border-right: 1px solid #003366;
+    padding: 2%;
+    display:block;
   }
-  .peralta{
-    background-image: url('peralta.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: relative;
-    background-position: center;
+
+  .aMessage{
+    margin-bottom: 3%;
+  }
+
+  .daMessage {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-left: 2%;
+    padding-top: 1%;
+    text-align: left; }
+
+.contactBlock{
+  padding-bottom: 10%;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.contactBlock2{
+  padding-bottom: 1%;
+}
+
+.contactBlock:hover{
+  background-color: #f0f0f0;
+}
+
+.icon {
+  color: #003366;
+}
+
+.contactBlock:hover .icon{
+  color: #00b8ff;
+}
+
+.icon2{
+  color:white;
+  font-size: 5pt;
+}
+
+.icon2:hover{
+  color: #00b8ff;
+}
+
+  .latText {
+    margin-left: 5%; }
+    .latText h6 {
+      font-size: 20px;
+      text-transform: uppercase; }
+    .latText p {
+      font-size: 12px;
+      margin-top: 1%; }
+  .reviews{
+    margin-bottom: 1%;
+    text-align: center;
+    border-bottom: 1px solid #003366;
+  }
+
+  .footer {
+    margin-top: 50px;
+    border-color: black;
+    background-color: #003366;
+    box-shadow: 3px 5px 4px 0px #c7c7c7;
+    border-radius: 5px;
+    display: block;
+  }
+  .footer .footerData{
+    width: 30%;
+    margin-left: 35%;
+    text-align: center;
+    padding: 2%;
+  }
+
+@media screen and (max-width: 1036px) {
+  .dashButton {
+    height: 20%;
+  }
+  .nameButton {
+    font-size: 32px;
   }
 }
- */
-/* //-----------------contact section styling -----------------------------------//
-.contactSection{
-  padding-top: 2%;
-  background-color: white;
-  height: 88vh;
-  border:1px solid black;
-  font-family: 'Antic', sans-serif;
-  .carousel{
-    h4{
-      color:$teal;
-      font-weight:bold;
-    }
-    p{
-      font-size:20px;
-      color: #FFB884;
-    text-shadow: $brown 0px 0px 1px;
-    }
+
+@media screen and (max-width: 959px){
+  md-card{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
   }
-  ul{
-    text-decoration:none;
-    width: 80%;
-    text-align:center;
+  .chats{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .boxControl{
+    display:block;
+  }
+  .contactMethods{
+    width:100%;
+    border: none;
+    margin-left: none;
+    display:inline-flex;
+  }
+  .contactBlock{
+    padding-bottom: none;
+    margin-right:3%;
+
+  }
+  .icon, .latText{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .nameButton {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width:599px) {
+  .contactMethods{
+    display:inline-block;
+    width:80%;
+  }
+  .contactBlock{
+    width:100%;
+  }
+  .latText{
+    margin-left:20%;
+  }
+  .messageInfo{
+    width:80%;
     margin-left:auto;
     margin-right:auto;
-    margin-top:2%;
-    li{
-      display:inline-block;
-      margin-right:3%;
-      a{
-        color:$brown;
-      }
-      a:hover{
-        color:$teal;
-        text-decoration:none;
-      }
-      i{
-        display:block;
-      }
-    }
+  }
+  .footer .footerData{
+    width: 60%;
+    margin-left:20%;
   }
 }
- */
+
+@media screen and (max-width:555px) {
+  .dashButton{
+    height:40%;
+  }
+  .nameButton{
+    height: 50%;
+  }
+}*/

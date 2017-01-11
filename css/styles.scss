@@ -1,532 +1,441 @@
-$teal: #337ab7;
-$brown: #332C26;
+$babyBlue: #00b8ff;
+$darkBlue: #003366;
+$lightGrey: #f0f0f0;
 
-body{
-  top:0;
-  bottom:0;
-  margin:0;
-  padding-top: 35px;
+* {
+  font-family: 'Arima Madurai', cursive;
 }
 
-header{
-  width:100%;
-  position:fixed;
-  top:0;
-  left:0;
-  z-index:3;
-  font-family: 'Antic', sans-serif;
-}
-.container-fluid{
-  background-color:$brown;
-}
-.nav h6{
-  color:$teal;
-  font-family: 'Antic', sans-serif;
-  text-shadow: none;
-  font-size: 1.1em;
-}
-
-.nav a{
-  color:$teal;
-  z-index:100;
-}
-.nav a:hover{
-  color:#00FFFF;
-}
-
-//--------------------Main Section -------------------------------------------//
-
-.mainSection{
-  min-height:75rem;
-  background-image: url('http://socialventurepartners.org.s3.amazonaws.com/www.socialventurepartners.org/sites/48/2013/05/CharlestonSlider.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: relative;
-  background-position: center;
-  text-align:center;
-
-  h1{
-    padding-top: 10%;
-    font-family: 'Dancing Script', cursive;
-    font-size: 6em;
-  }
-  h4{
-    font-family: 'Antic', sans-serif;
-    font-size: 3rem;
-    margin-bottom: 3%;
-  }
-  .learnMore{
-    font-family: 'Antic', sans-serif;
-    font-weight: 400;
-    font-size: 2rem;
-    border: 1px dashed white;
-    padding: 1%;
-    color:$teal;
-    background-color:$brown;
-  }
-  .learnMore:hover{
-    background-color: white;
-    color: $brown;
-    text-decoration:none;
-  }
-}
-
-//---------------------------About Section -----------------------------------//
-.meSection{
-  background-color: white;
-/*   border: 1px solid black; */
-  min-height:73rem;
-  ul{
-    list-style: none;
-    padding-top:10%;
-    font-family: 'Antic', sans-serif;
-  }
-  li{
-    display:inline-block;
-    width:40%;
-    margin-left:5%;
-    text-align:justify;
-    vertical-align:middle;
-    h4{
-      font-size: 4rem;
-      text-align:center;
-      color:$brown;
-      text-shadow: $teal 0px 0px 1px;
-    }
-    p{
-      padding-top:4%;
-      font-size: 2rem;
-      line-height: 150%;
-      margin-bottom:10%;
-    }
-    .learnMore{
-      font-family: 'Antic', sans-serif;
-      font-weight: 400;
-      font-size: 2rem;
-      border: 1px dashed black;
-      padding: 1%;
-      color:$teal;
-      background-color:$brown;
-      margin-left:35%;
-      margin-top:5%;
-    }
-    .learnMore:hover{
-      background-color: white;
-      color: $brown;
-      text-decoration:none;
-    }
-  }
-  .myPic{
-    text-align:center;
-    img{
-      border-radius: 50%;
-      border: 4px solid $brown;
-    }
-  }
-}
-
-//---------------------------Resume Section ----------------------------------//
-.resumeSection{
-/*   border: 1px solid black; */
-  min-height:73rem;
-  padding-top:10%;
-  font-family: 'Antic', sans-serif;
-  .sideResume{
-    border-left:1px solid black;
-    h3{
-      font-size:2.5rem;
-      text-align:center;
-      color:$brown;
-      text-shadow: $teal 0px 0px 1px;
-      margin-bottom: 5%;
-    }
-    p{
-      font-size: 1.5rem;
-      text-align: center;
-      color:$brown;
-      line-height:150%;
-      margin-bottom: 10%;
-    }
-    .learnMore{
-      font-family: 'Antic', sans-serif;
-      font-weight: 400;
-      font-size: 2rem;
-      border: 1px dashed black;
-      padding: 1%;
-      color:$teal;
-      background-color:$brown;
-      margin-left:35%;
-      margin-top: 3%;
-    }
-    .learnMore:hover{
-      background-color: white;
-      color: $brown;
-      text-decoration:none;
-    }
-  }
-  .resumeWork{
-    .linkToResume{
-      text-align:center;
-      width:20%;
-    }
-    h3{
-      text-align:center;
-      font-size:3rem;
-      text-align:center;
-      color:$brown;
-      text-shadow: $teal 0px 0px 1px;
-    }
-    ul{
-      list-style:none;
-      margin-top: 5%;
-    }
-    li{
-      border: 1px solid black;
-      display:inline-block;
-      width:30%;
-      vertical-align:top;
-      padding:1%;
-      margin-right:2%;
-      height:39rem;
-      -webkit-box-shadow: 10px 10px 5px 0px rgba(217,213,217,1);
-      -moz-box-shadow: 10px 10px 5px 0px rgba(217,213,217,1);
-      box-shadow: 10px 10px 5px 0px rgba(217,213,217,1);
-      img{
-        width:200px;
-      }
-    }
-
-  }
-}
-
-//---------------------------contact Section ---------------------------------//
-
-.contactSection{
-/*   border: 1px solid black; */
-  min-height:73rem;
-  padding-top:10%;
-  font-family: 'Antic', sans-serif;
-  .carousel{
-    h4{
-      font-weight:600;
-      font-size:3rem;
-      color: $brown;
-      text-shadow: $brown 0px 0px 1px;
-    }
-    p{
-      font-size:2rem;
-      color: #00FFFF;
-      text-shadow: $brown 0px 0px 1px;
-    }
-    .carousel-caption{
-      background-color:grey;
-      opacity: 0.9;
-    }
-  }
-  .hireContact{
-    list-style:none;
-    text-align:center;
-    background-color:$brown;
-    margin-left:0;
-    height:15rem;
-    padding-top:2%;
-    li{
-      display:inline-block;
-      text-align:center;
-      margin-right:3%;
-      font-size:1.5rem;
-      i{
-        display:block;
-      }
-    }
-    a{
-      text-decoration:none;
-    }
-    a:hover{
-      color:#00FFFF;
-    }
-  }
-}
-
-/*
+//----This is the Header Section ------//
 .header{
-  background-color: #332C26;
+  position:fixed;
+  margin-bottom: 100px;
+  z-index:10;
   width: 100%;
-  position: fixed;
   display: block;
-  z-index: 3;
-  top:0;
-  left:0;
-  height:12vh;
-  ul{
-    list-style: none;
-  }
-  h6{
-    text-decoration: none;
-    font-size: 20px;
-    color: $teal;
-    font-family: 'Nova Oval', cursive;
-  }
-  h6:hover{
-    text-decoration:none;
-    color:white;
-  }
-.row{
-  border: 5px solid black;
-  border-radius: 5%;
-}
-  .navLinks{
-    padding-top: 4%;
-    text-align: center;
-    li{
-      display: inline-block;
-      font-size: 20px;
-      padding-right: 5%;
-    }
-  }
+  background-color: $darkBlue;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 
-  .contact{
-    text-align: right;
-    padding-right: 3%;
-    a{
-      color: $teal;
-    }
-    a:hover{
-      color:white;
-      text-decoration:none;
-    }
-
-    p{
-      font-family: 'Nova Oval', cursive;
-      font-size: 15px;
-      text-decoration: none;
-    }
-  }
-  .name{
-    text-align: left;
-    padding-left: 3%;
-    a{
-      font-size: 30px;
-      font-family: 'Swanky and Moo Moo', cursive;
-    }
-  }
-} */
-
-/*
-//------------------------main section styling -------------------------------//
-.mainSection{
-margin-top:8%;
-  height: 88vh;
-  background-image: url('http://socialventurepartners.org.s3.amazonaws.com/www.socialventurepartners.org/sites/48/2013/05/CharlestonSlider.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: relative;
-  background-position: center;
-  font-family: 'Swanky and Moo Moo', cursive;
-
-  .learnMore{
-    margin-top: 8%;
-    width: 40%;
-    text-align:center;
-    margin-left:auto;
-    margin-right:auto;
-    a{
-      color: $teal;
-      width:100%;
-      font-size: 40px;
-      background-color: #332C26;
-      padding: 4px;
-      text-align: center;
-    }
-    a:hover{
-      color: white;
-      text-decoration: none;
-    }
-  }
-  h1{
-    font-size: 80px;
-    text-align:center;
-    padding-top:9%;
-
-  }
-  h4{
-    font-size: 60px;
-    text-align:center;
-  }
-
-}
- */
-/* //-----------------about section styling -------------------------------------//
-.meSection{
-  padding-top: 2%;
-  background-color: #FFB884;
-  height: 88vh;
-  ul{
-    font-family: 'Antic', sans-serif;
-    text-align:center;
-    margin-top:5%;
-    li{
-      display: inline-block;
-      vertical-align:middle;
-      width: 40%;
-      text-align:center;
-      margin-left:auto;
-      margin-right:auto;
-      img{
-        border-radius: 50%;
-        vertical-align:middle;
-        border: 2px solid $teal;
-
-      }
-      h4{
-        font-size: 50px;
-        text-shadow: $teal 0px 0px 1px;
-        font-weight:bolder;
-      }
-      p{
-        font-size:25px;
-        line-height:120%;
-        font-family: 'Antic', sans-serif;
-      }
-    }
-  }
-}
- */
-/* //-----------------resume section styling ------------------------------------//
-
-.resumeSection{
-  padding-top: 2%;
-  background-color: #E8D3A9;
-  height: 88vh;
-  border:1px solid black;
-  font-family: 'Antic', sans-serif;
-  .sideResume{
-    width:28%;
-    display:inline-block;
-    padding-left: 2%;
-    padding-right: 2%;
-    border-right: 1px dashed #332C26;
-    p{
-      font-family: 'Antic', sans-serif;
-      text-align:center;
-    }
-  }
-  .linkToResume{
-    padding-right:3%;
-    text-align:right;
-    a{
-      color:$brown;
-    }
-    a:hover{
-      text-decoration:none;
-      color:$teal;
-    }
-  }
-  .resumeWork{
-    width:68%;
-    display:inline-block;
-    vertical-align: top;
+  .md-button {
+    margin-top: 1%;
   }
   h3{
-    width: 80%;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:15%;
-    text-align:center;
-    font-size: 50px;
-    text-shadow: $teal 0px 0px 1px;
-    font-weight:bolder;
+    color: white;
+    display: inline-block;
+    vertical-align:bottom;
+    margin:0;
+    margin-left: 3%;
+    vertical-align: middle;
   }
-  ul{
-    text-decoration:none;
-    width:100%;
-    margin-top:4%;
-    padding-left:20%;
-    margin-left:auto;
-    margin-right:auto;
+}
 
-    li{
-      display:inline-block;
-      width:10em;
-      height:10em;
-      padding-top:3em;
-      text-align:center;
-      vertical-align:bottom;
-      border-radius:100%;
-      border: 4px solid #332C26;
-      margin-right:5%;
-      h4{
-          padding:4%;
-          font-weight:bolder;
-          font-size: 22px;
-          color: $teal;
-          background-color:#332C26;
-          border-radius:40%;
+//----This is the start of the Content ----//
+.content{
+  height:100vh;
+  overflow:auto;
+  background-color: $lightGrey;
+  //---sideNav styling -----//
+  md-sidenav, md-sidenav.md-locked-open,
+  md-sidenav.md-closed.md-locked-open-add-active {
+    min-width: 150px !important;
+    width: 5vw !important;
+    max-width: 250px !important;
+  }
+  md-sidenav{
+    .sideButton{
+      width: 100%;
+      text-transform: none;
+      text-align: left;
+      padding-left: 10%;
+      color: grey;
+      font-weight: bold;
+    }
+    .sideButton:hover{
+      margin-left: 0;
+      border-left: 5px solid $darkBlue;
+      color: $darkBlue;
+      font-weight: 300;
+    }
+  }
+
+  //-- md-content class="image" section ---//
+  .image{
+    display: block;
+    width: 90%;
+    margin: 82px auto 0 auto;
+    background-image: url("../css/desk.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: inherit;
+    background-position: center;
+    filter: grayscale(60%);
+    height: 80%;
+
+    .dashButton{
+      width: 50%;
+      height: 30%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      margin-top: 150px;
+      z-index: 15;
+      border: 2px solid white;
+
+      .nameButton{
+        font-weight: bolder;
+        font-size:48px;
+        color: $babyBlue;
+        height: 50%;
+        width: 100%;
+      }
+      .nameButton:hover{
+        color: $darkBlue;
       }
     }
   }
-  .placeMe{
-    background-image: url('placeme.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: relative;
-    background-position: center;
-  }
-  .halibut{
-    background-image: url('halibut.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: relative;
-    background-position: center;
-  }
-  .peralta{
-    background-image: url('peralta.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: relative;
-    background-position: center;
-  }
-}
- */
-/* //-----------------contact section styling -----------------------------------//
-.contactSection{
-  padding-top: 2%;
-  background-color: white;
-  height: 88vh;
-  border:1px solid black;
-  font-family: 'Antic', sans-serif;
-  .carousel{
-    h4{
-      color:$teal;
-      font-weight:bold;
-    }
-    p{
-      font-size:20px;
-      color: #FFB884;
-    text-shadow: $brown 0px 0px 1px;
-    }
-  }
-  ul{
-    text-decoration:none;
-    width: 80%;
-    text-align:center;
+  //---This styles the content below image --//
+  .allStuff {
+    width: 90%;
     margin-left:auto;
-    margin-right:auto;
-    margin-top:2%;
-    li{
-      display:inline-block;
-      margin-right:3%;
-      a{
-        color:$brown;
+    margin-right: auto;
+    background-color: $lightGrey;
+    .sectionBox{
+      margin-top: 50px;
+      display: block;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      border-color: black;
+      background-color: white;
+      box-shadow: 3px 5px 4px 0px #c7c7c7;
+      border-radius: 5px;
+      height: 90%;
+      .messages{
+        border-bottom: 1px solid $darkBlue;
+        .sectionTitle{
+          text-align: left;
+          padding: 2% 0 2% 2%;
+        }
       }
-      a:hover{
-        color:$teal;
-        text-decoration:none;
+      .messageInfo{
+        //---This is the aboutMe ---//
+        .photoBox{
+          padding: 5% 5% 5% 5%;
+          text-align: center;
+          .myPhoto{
+            width: 200px;
+            height: 250px;
+            border-radius: 50%;
+            border: 4px solid $darkBlue;
+          }
+        }
+        .description{
+          padding: 5% 5% 5% 5%;
+          text-align: center;
+        }
       }
-      i{
+      .aDiv{
+        //---This styles the scroll button --//
+        .sectionScroll{
+          text-align: center;
+          padding: 2% 0 2% 2%;
+          .scrollButton{
+            width: 60%;
+            font-size: 24px;
+            background-color: $darkBlue;
+            color: white;
+          }
+          .scrollButton:hover{
+            background-color:$lightGrey;
+            color: $darkBlue;
+          }
+        }
+      }
+      .linkToResume{
+        text-align: right;
+        padding: 2% 0 2% 2%;
+        color: $darkBlue;
+        .resumeButton:hover{
+          color:$babyBlue;
+        }
+      }
+      //---This formats the cards section ---//
+      .sectionBox md-card .md-actions .md-button{
+        margin:0;
+        bottom: 0;
+      }
+      .cardSection{
+          margin-top:1%;
+          md-card{
+            display:inline-block;
+            border-radius: 5px;
+            .aCard{
+              width: 100%;
+              height: 13em;
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-attachment: relative;
+              background-position: top;
+              border-radius: 5px 5px 0px 0px;
+            }
+            .cardImage{
+              background-image: url("../css/halibut.jpg");
+            }
+            .cardImage2{
+              background-image: url("../css/placeme.jpg");
+            }
+            .cardImage3{
+              background-image: url("../css/peralta.jpg");
+            }
+            .topOfCard{
+              width: 100%;
+              height: 40px;
+              background-color: $darkBlue;
+              margin-top: 5%;
+              text-align: center;
+              h4{
+                margin-top: auto;
+                margin-bottom: auto;
+                color: white;
+              }
+            }
+            md-card-content{
+              height:90px;
+              margin-bottom:2%;
+              p{
+                color:$darkBlue;
+                overflow:scroll;
+                font-size: 12px;
+                text-align:center;
+              }
+            }
+            md-card-footer{
+              padding: 10px 0px 0px 0px;
+              bottom: 0;
+              background-color: $darkBlue;
+              border-radius: 0px 0px 5px 5px;
+              .md-button {
+                padding: 0;
+                min-width: 20px;
+              }
+            }
+          }
+          md-card:hover{
+            background-color: $lightGrey;
+            md-card-footer{
+              background-color: $babyBlue;
+            }
+            .topOfCard{
+              background-color: $babyBlue;
+              h4{
+                color:$darkBlue;
+              }
+            }
+          }
+      }
+      //--- Contact Section ---//
+      .contactMethods{
+        width: 60%;
+        margin: 2%;
+        border-right: 1px solid $darkBlue;
+        padding: 2%;
         display:block;
+        .contactBlock{
+          padding-bottom: 10%;
+          border-bottom: 1px solid $lightGrey;
+          .icon{
+            color: $darkBlue;
+          }
+          .latText{
+            margin-left:5%;
+            h6{
+              font-size: 20px;
+              text-transform: uppercase;
+            }
+            p{
+              font-size: 12px;
+              margin-top: 1%;
+            }
+          }
+        }
+        .contactBlock:hover{
+          background-color: $lightGrey;
+          .icon{
+            color: $babyBlue;
+          }
+        }
+      }
+      .chats{
+        width: 60%;
+        margin: 2%;
+        border: 3px solid $darkBlue;
+        padding: 2% 2% 0% 2%;
+        border-radius: 5px;
+        background-image: url("../css/chat2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: inherit;
+        background-position: center;
+        .reviews{
+          margin-bottom: 1%;
+          text-align: center;
+          border-bottom: 1px solid $darkBlue;
+        }
+        .aMessage{
+          margin-bottom: 3%;
+          .daMessage{
+            background-color: $lightGrey;
+            border-radius: 5px;
+            margin-left: 2%;
+            margin-right: 2%;
+            padding-left: 2%;
+            padding-top: 1%;
+            text-align: left;
+          }
+        }
+      }
+    }
+    //----This is the footer styling ---//
+    .footer{
+      margin-top: 50px;
+      border-color: black;
+      background-color: $darkBlue;
+      box-shadow: 3px 5px 4px 0px #c7c7c7;
+      border-radius: 5px;
+      display: block;
+      .footerData{
+        width: 30%;
+        margin-left: 35%;
+        text-align: center;
+        padding: 2%;
+        .contactBlock2{
+          padding-bottom: 1%;
+          .icon2{
+            color:white;
+            font-size:5pt;
+          }
+          .icon2:hover{
+            color: $babyBlue;
+          }
+        }
       }
     }
   }
 }
- */
+
+//---These are the adjustments made for different media screens ---//
+@media screen and (max-width: 1036px) {
+  .content{
+    .image{
+      .dashButton {
+        height: 20%;
+        .nameButton {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+
+
+}
+//
+@media screen and (max-width: 959px){
+  .content{
+    .allStuff{
+      .sectionBox{
+        .boxControl{
+          display:block;
+        }
+        .cardSection{
+          md-card{
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+        .chats{
+          width: 75%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .contactMethods{
+          width:100%;
+          border: none;
+          margin-left: none;
+          display:inline-flex;
+          .contactBlock{
+            padding-bottom: none;
+            margin-right:3%;
+            .icon, .latText{
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .content{
+    .image{
+      .dashButton{
+        .nameButton {
+          font-size: 26px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:599px) {
+  .content{
+    .image{
+      .dashButton{
+        height: 40%;
+        .nameButton{
+          font-size: 25px;
+          white-space: normal;
+        }
+      }
+    }
+    .allStuff{
+      .sectionBox{
+        .contactMethods{
+          display:inline-block;
+          width:80%;
+          .contactBlock{
+            width:100%;
+            .latText{
+              margin-left:20%;
+            }
+          }
+        }
+        .messageInfo{
+          width:80%;
+          margin-left:auto;
+          margin-right:auto;
+        }
+      }
+      .footer{
+        .footerData{
+          width: 60%;
+          margin-left:20%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:555px) {
+  .content{
+    .image{
+      .dashButton{
+        height:40%;
+        .nameButton{
+          height: 50%;
+        }
+      }
+    }
+  }
+}
