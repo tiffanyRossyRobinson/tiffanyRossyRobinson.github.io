@@ -1,0 +1,301 @@
+* {
+  font-family: 'Arima Madurai', cursive; }
+
+.header {
+  position: fixed;
+  margin-bottom: 100px;
+  z-index: 10;
+  width: 100%;
+  display: block;
+  background-color: #003366;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+  .header .md-button {
+    margin-top: 1%; }
+  .header h3 {
+    color: white;
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0;
+    margin-left: 3%;
+    vertical-align: middle; }
+
+.content {
+  height: 100vh;
+  overflow: auto;
+  background-color: #f0f0f0; }
+  .content md-sidenav, .content md-sidenav.md-locked-open,
+  .content md-sidenav.md-closed.md-locked-open-add-active {
+    min-width: 150px !important;
+    width: 5vw !important;
+    max-width: 250px !important; }
+  .content md-sidenav .sideButton {
+    width: 100%;
+    text-transform: none;
+    text-align: left;
+    padding-left: 10%;
+    color: grey;
+    font-weight: bold; }
+  .content md-sidenav .sideButton:hover {
+    margin-left: 0;
+    border-left: 5px solid #003366;
+    color: #003366;
+    font-weight: 300; }
+  .content .image {
+    display: block;
+    width: 90%;
+    margin: 82px auto 0 auto;
+    background-image: url("../css/desk.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: inherit;
+    background-position: center;
+    filter: grayscale(60%);
+    height: 80%; }
+    .content .image .dashButton {
+      width: 50%;
+      height: 30%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      margin-top: 150px;
+      z-index: 15;
+      border: 2px solid white; }
+      .content .image .dashButton .nameButton {
+        font-weight: bolder;
+        font-size: 48px;
+        color: #00b8ff;
+        height: 50%;
+        width: 100%; }
+      .content .image .dashButton .nameButton:hover {
+        color: #003366; }
+  .content .allStuff {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f0f0f0; }
+    .content .allStuff .sectionBox {
+      margin-top: 50px;
+      display: block;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      border-color: black;
+      background-color: white;
+      box-shadow: 3px 5px 4px 0px #c7c7c7;
+      border-radius: 5px;
+      height: 90%; }
+      .content .allStuff .sectionBox .messages {
+        border-bottom: 1px solid #003366; }
+        .content .allStuff .sectionBox .messages .sectionTitle {
+          text-align: left;
+          padding: 2% 0 2% 2%; }
+      .content .allStuff .sectionBox .messageInfo .photoBox {
+        padding: 5% 5% 5% 5%;
+        text-align: center; }
+        .content .allStuff .sectionBox .messageInfo .photoBox .myPhoto {
+          width: 200px;
+          height: 250px;
+          border-radius: 50%;
+          border: 4px solid #003366; }
+      .content .allStuff .sectionBox .messageInfo .description {
+        padding: 5% 5% 5% 5%;
+        text-align: center; }
+      .content .allStuff .sectionBox .aDiv .sectionScroll {
+        text-align: center;
+        padding: 2% 0 2% 2%; }
+        .content .allStuff .sectionBox .aDiv .sectionScroll .scrollButton {
+          width: 60%;
+          font-size: 24px;
+          background-color: #003366;
+          color: white; }
+        .content .allStuff .sectionBox .aDiv .sectionScroll .scrollButton:hover {
+          background-color: #f0f0f0;
+          color: #003366; }
+      .content .allStuff .sectionBox .linkToResume {
+        text-align: right;
+        padding: 2% 0 2% 2%;
+        color: #003366; }
+        .content .allStuff .sectionBox .linkToResume .resumeButton:hover {
+          color: #00b8ff; }
+      .content .allStuff .sectionBox .sectionBox md-card .md-actions .md-button {
+        margin: 0;
+        bottom: 0; }
+      .content .allStuff .sectionBox .cardSection {
+        margin-top: 1%; }
+        .content .allStuff .sectionBox .cardSection md-card {
+          display: inline-block;
+          border-radius: 5px; }
+          .content .allStuff .sectionBox .cardSection md-card .aCard {
+            width: 100%;
+            height: 13em;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: relative;
+            background-position: top;
+            border-radius: 5px 5px 0px 0px; }
+          .content .allStuff .sectionBox .cardSection md-card .cardImage {
+            background-image: url("../css/halibut.jpg"); }
+          .content .allStuff .sectionBox .cardSection md-card .cardImage2 {
+            background-image: url("../css/placeme.jpg"); }
+          .content .allStuff .sectionBox .cardSection md-card .cardImage3 {
+            background-image: url("../css/peralta.jpg"); }
+          .content .allStuff .sectionBox .cardSection md-card .topOfCard {
+            width: 100%;
+            height: 40px;
+            background-color: #003366;
+            margin-top: 5%;
+            text-align: center; }
+            .content .allStuff .sectionBox .cardSection md-card .topOfCard h4 {
+              margin-top: auto;
+              margin-bottom: auto;
+              color: white; }
+          .content .allStuff .sectionBox .cardSection md-card md-card-content {
+            height: 90px;
+            margin-bottom: 2%; }
+            .content .allStuff .sectionBox .cardSection md-card md-card-content p {
+              color: #003366;
+              overflow: scroll;
+              font-size: 12px;
+              text-align: center; }
+          .content .allStuff .sectionBox .cardSection md-card md-card-footer {
+            padding: 10px 0px 0px 0px;
+            bottom: 0;
+            background-color: #003366;
+            border-radius: 0px 0px 5px 5px; }
+            .content .allStuff .sectionBox .cardSection md-card md-card-footer .md-button {
+              padding: 0;
+              min-width: 20px; }
+        .content .allStuff .sectionBox .cardSection md-card:hover {
+          background-color: #f0f0f0; }
+          .content .allStuff .sectionBox .cardSection md-card:hover md-card-footer {
+            background-color: #00b8ff; }
+          .content .allStuff .sectionBox .cardSection md-card:hover .topOfCard {
+            background-color: #00b8ff; }
+            .content .allStuff .sectionBox .cardSection md-card:hover .topOfCard h4 {
+              color: #003366; }
+      .content .allStuff .sectionBox .contactMethods {
+        width: 60%;
+        margin: 2%;
+        border-right: 1px solid #003366;
+        padding: 2%;
+        display: block; }
+        .content .allStuff .sectionBox .contactMethods .contactBlock {
+          padding-bottom: 10%;
+          border-bottom: 1px solid #f0f0f0; }
+          .content .allStuff .sectionBox .contactMethods .contactBlock .icon {
+            color: #003366; }
+          .content .allStuff .sectionBox .contactMethods .contactBlock .latText {
+            margin-left: 5%; }
+            .content .allStuff .sectionBox .contactMethods .contactBlock .latText h6 {
+              font-size: 20px;
+              text-transform: uppercase; }
+            .content .allStuff .sectionBox .contactMethods .contactBlock .latText p {
+              font-size: 12px;
+              margin-top: 1%; }
+        .content .allStuff .sectionBox .contactMethods .contactBlock:hover {
+          background-color: #f0f0f0; }
+          .content .allStuff .sectionBox .contactMethods .contactBlock:hover .icon {
+            color: #00b8ff; }
+      .content .allStuff .sectionBox .chats {
+        width: 60%;
+        margin: 2%;
+        border: 3px solid #003366;
+        padding: 2% 2% 0% 2%;
+        border-radius: 5px;
+        background-image: url("../css/chat2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: inherit;
+        background-position: center; }
+        .content .allStuff .sectionBox .chats .reviews {
+          margin-bottom: 1%;
+          text-align: center;
+          border-bottom: 1px solid #003366; }
+        .content .allStuff .sectionBox .chats .aMessage {
+          margin-bottom: 3%; }
+          .content .allStuff .sectionBox .chats .aMessage .daMessage {
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            margin-left: 2%;
+            margin-right: 2%;
+            padding-left: 2%;
+            padding-top: 1%;
+            text-align: left; }
+    .content .allStuff .footer {
+      margin-top: 50px;
+      border-color: black;
+      background-color: #003366;
+      box-shadow: 3px 5px 4px 0px #c7c7c7;
+      border-radius: 5px;
+      display: block; }
+      .content .allStuff .footer .footerData {
+        width: 30%;
+        margin-left: 35%;
+        text-align: center;
+        padding: 2%; }
+        .content .allStuff .footer .footerData .contactBlock2 {
+          padding-bottom: 1%; }
+          .content .allStuff .footer .footerData .contactBlock2 .icon2 {
+            color: white;
+            font-size: 5pt; }
+          .content .allStuff .footer .footerData .contactBlock2 .icon2:hover {
+            color: #00b8ff; }
+
+@media screen and (max-width: 1036px) {
+  .content .image .dashButton {
+    height: 20%; }
+    .content .image .dashButton .nameButton {
+      font-size: 32px; } }
+
+@media screen and (max-width: 959px) {
+  .content .allStuff .sectionBox .boxControl {
+    display: block; }
+  .content .allStuff .sectionBox .cardSection md-card {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto; }
+  .content .allStuff .sectionBox .chats {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto; }
+  .content .allStuff .sectionBox .contactMethods {
+    width: 100%;
+    border: none;
+    margin-left: none;
+    display: inline-flex; }
+    .content .allStuff .sectionBox .contactMethods .contactBlock {
+      padding-bottom: none;
+      margin-right: 3%; }
+      .content .allStuff .sectionBox .contactMethods .contactBlock .icon, .content .allStuff .sectionBox .contactMethods .contactBlock .latText {
+        text-align: center; } }
+
+@media screen and (max-width: 850px) {
+  .content .image .dashButton .nameButton {
+    font-size: 26px; } }
+
+@media screen and (max-width: 599px) {
+  .content .image .dashButton {
+    height: 40%; }
+    .content .image .dashButton .nameButton {
+      font-size: 25px;
+      white-space: normal; }
+  .content .allStuff .sectionBox .contactMethods {
+    display: inline-block;
+    width: 80%; }
+    .content .allStuff .sectionBox .contactMethods .contactBlock {
+      width: 100%; }
+      .content .allStuff .sectionBox .contactMethods .contactBlock .latText {
+        margin-left: 20%; }
+  .content .allStuff .sectionBox .messageInfo {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; }
+  .content .allStuff .footer .footerData {
+    width: 60%;
+    margin-left: 20%; } }
+
+@media screen and (max-width: 555px) {
+  .content .image .dashButton {
+    height: 40%; }
+    .content .image .dashButton .nameButton {
+      height: 50%; } }

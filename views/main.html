@@ -1,115 +1,189 @@
-<header>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-        <a class="navbar-brand" href="#mainSection">Tiffany R Robinson</a></a>
-      </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a class="mainSec" href="#mainSection"><h6>Home</h6></a></li>
-          <li><a  class="aboutMe" href="#meSection"><h6>About</h6></a></li>
-          <li><a class="resumeSec" href="#resumeSection"><h6>Resume</h6></a></li>
-          <li><a class="contactSec" href="#contactSection"><h6>Hire Me!</h6></a></li>
-        </ul>
-
-      </div>
-    </div>
-  </nav>
-</header>
-
-<section class= "mainSection" id = "mainSection">
-  <h1 class="wow pulse">Tiffany R. Robinson</h1>
-  <h4>Front-End Web Developer</h4>
-
-  <a class="learnMore" href="#meSection">Make A Move</a>
-
-</section>
-<section class= "meSection" id = "meSection">
-  <ul>
-    <li>
-      <h4>About Me</h4>
-      <p>
-        In April 2015, after years of living in Texas, my family and I decided to move to Charleston, SC. With this new move came the opportunity to take the leap and change the direction my career was headed. I recently graduated from The Iron Yard in the Front-End Engineering program. I am ready to continue my journey and find a position that allows me to challenge myself daily, constantly learn, and create and build exciting products!
-      </p>
-      <a class="learnMore" href="#resumeSection">My Work</a>
-    </li>
-    <li class="myPic"><img class="wow bounce" src="/css/me.jpg" width="200" alt="" /></li>
-
-  </ul>
-</section>
-
-<section class= "resumeSection" id = "resumeSection">
-
-  <div class="resumeWork col-md-8">
-    <div class="linkToResume">
-      <a href="views/tiffany_robinson_resume.pdf" target="_blank"><i class="icon-download-alt icon-2x"><br><h6>Download Resume</h6></i></a>
-    </div>
-    <h3>Check Out My Work!</h3>
-    <ul>
-      <li class="wow bounceInLeft halibut"><a href="http://justhalibut.herokuapp.com/#/" target="_blank"> <img src="css/halibut.jpg"/><h4>Just For The Halibut</h4> <p>
-        A fishing application that allows the user to submit the fish they have caught with statistics that are used in an algorithm to raise their achievement levels. In addition, users can view fish caught in their area along with the top ranked fisherman.
-      </p></a></li>
-      <li class="wow bounceInUp placeMe"><a href="http://tiffanyrossyrobinson.github.io/tango/" target="_blank"><img src="css/placeme.jpg"/><h4>PlaceMe</h4> <p>
-      Through a series of questions, the application is able to introduce the user to places around America they would enjoy but never would have thought of.
-      </p></a></li>
-      <li class="wow bounceInRight peralta"><a href="http://tiffanyrossyrobinson.github.io/DayFourResponsive/" target="_blank"><img src="css/peralta.jpg"/><h4>Powell Peralta</h4><p>
-        A layout of a Powell Peralta site that uses HTML and CSS to create a responsive webpage.
-      </p></a></li>
-    </ul>
+<div ng-controller="MainController">
+  <div class="header">
+    <md-button ng-click="openLeftMenu()">
+      <h3> &#9776;</h3><h3>Menu</h3>
+    </md-button>
   </div>
+  <md-content id="scrollArea" class="content" ng-class="{'active': isActive}">
+    <md-sidenav md-component-id="left" md-is-open="isSidenavOpen" class="md-sidenav-left">
+      <md-button class="sideButton" ng-click="GoTo('image')"> Home</md-button>
+      <md-button class="sideButton" ng-click="GoTo('aboutMe')"> About</md-button>
+      <md-button class="sideButton" ng-click="GoTo('resume')"> My Work</md-button>
+      <md-button class="sideButton" ng-click="GoTo('contactMe')"> Hire!</md-button>
+    </md-sidenav>
+    <md-content id="image" layout="row" class="image">
+        <div class="wow pulse dashButton">
+          <md-button class="nameButton" ng-click="GoTo('aboutMe')">Tiffany <wbr>Robinson <br/></md-button>
+          <h4> Web Developer </h4>
+        </div>
+    </md-content>
 
-  <div class="wow fadeIn col-md-4 sideResume">
-
-    <h3>Education: </h3>
-    <p>
-      - The Iron Yard (August 2015) <br>Front-End Engineering <br> <br>
-      - The University of Texas at El Paso (December 2011) <br> BS Electrical Engineering
-    </p>
-    <h3>Toolbox: </h3>
-    <p>
-      AngularJs, BackboneJs, Javascript, JQuery, SASS, CSS, HTML, PERL, C, Angular-Google Maps, Font-Awesome, and WOW
-    </p>
-
-    <h3>Extras: </h3>
-    <p>
-      DOD Secret Clearance
-    </p>
-
-    <a class="learnMore" href="#contactSection">Contact Me!</a>
-
-  </div>
-
-
-</section>
-<section class= "contactSection" id = "contactSection">
-  <div class="carousel" style="height: 450px">
-      <carousel interval="myInterval" no-wrap="noWrapSlides">
-        <slide ng-repeat="slide in slides" active="slide.active">
-          <img width="600" ng-src="{{slide.image}}" style="margin:auto;">
-          <div class="carousel-caption">
-            <h4>{{slide.title}}</h4>
-            <p>{{slide.text}}</p>
+    <div class="allStuff" layout="column" layout-sm="column">
+      <div flex="100" id="aboutMe" class="sectionBox" layout="row" layout-sm="column">
+          <div layout="row" class="messages" flex="100">
+                <div flex="60" flex-md="50" flex-sm="50" class="sectionTitle"><h2>About Me</h2></div>
           </div>
-        </slide>
-      </carousel>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-          <div class= "hireMeContact">
-            <ul class="hireContact">
-              <li><a  href="tel:915-342-3291"><i class="icon-phone icon-4x"></i>915.342.3291</a></li>
-              <li><a  href="mailto:trossys@gmail.com?Subject=Let's%20discuss%20possible%20job%20opportunities!"><i class="icon-envelope icon-4x"></i>trossys@gmail.com</a></li>
-              <li><a href="https://www.linkedin.com/pub/tiffany-robinson/102/774/787" target="_blank"><i class="icon-linkedin icon-4x"></i>Connect on LinkedIn</a></li>
-              <li><a href="https://github.com/tiffanyRossyRobinson" target="_blank"><i class="icon-github-sign icon-4x"></i>Follow on GitHub</a></li>
-            </ul>
+          <div layout="row" layout-sm="column" layout-md="row" class="messageInfo" flex="100">
+            <div flex="40" flex-md="40" flex-sm="40" class="hide-xs photoBox">
+                <img class="myPhoto" src="../css/me.jpg">
+            </div>
+            <div flex="60" flex-md="60" flex-sm="60" flex-xs="100" class="description">
+              <h4> I am a software developer with 3+ years software and 3+ years of system engineering experience. I have a Bachelor’s In Electrical Engineering with a concentration in computers. In addition, I graduated from The Iron Yard in the Front-End Engineering program in Charleston, SC. My family and I will be moving near Savannah, Georgia. I look forward to continuing my career in this new city!  </h4>
+            </div>
+          </div>
+          <div class="aDiv" layout="row" flex="100">
+                <div flex="100" class="sectionScroll" ng-click="GoTo('resume')">
+                  <md-button class="scrollButton">My Work</md-button>
+                </div>
+          </div>
+      </div>
+
+      <div flex="100" id="resume" class="sectionBox" layout="row" layout-sm="column">
+        <div layout="row" class="messages" flex="100">
+              <div flex="60" flex-md="50" flex-sm="50" class="sectionTitle">
+                <h2>My Work</h2>
+              </div>
+              <div flex="40" flex-md="50" flex-sm="50" class="linkToResume">
+                <md-button class="resumeButton" onclick="window.open('views/TiffanyRobinsonResume16.pdf',target='_blank');">
+                  <i class="icon-download-alt icon-2x"><h6>Resume</h6></i>
+                </md-button>
+              </div>
+        </div>
+
+        <div class="cardSection" layout="row" layout-sm="column" layout-xs="column" layout-md="row" flex="100" display="block">
+          <md-card flex="30" flex-sm="80" flex-xs="80" flex-md="30" onclick="window.open('http://justhalibut.herokuapp.com/#/',target='_blank');">
+             <div flex="100" layout="column" class="aCard cardImage"></div>
+             <div flex="100" layout="column"class="topOfCard">
+               <h4>Just for the Halibut</h4>
+             </div>
+             <md-card-content flex="100" layout="column">
+               <p>A fishing application that allows the user to submit the fish they have caught with statistics that are used in an algorithm to raise their achievement levels. In addition, users can view fish caught in their area along with the top ranked fisherman.</p>
+             </md-card-content>
+             <md-card-footer class="md-actions"  layout="row" layout-align="center">
+             </md-card-footer>
+          </md-card>
+          <md-card flex="30" flex-sm="80" flex-xs="80" flex-md="30" onclick="window.open('http://tiffanyrossyrobinson.github.io/tango/',target='_blank');">
+             <div flex="100" layout="column" class="aCard cardImage2"></div>
+             <div flex="100" layout="column" class="topOfCard">
+               <h4>PlaceMe</h4>
+             </div>
+             <md-card-content flex="100" layout="column">
+               <p>Through a series of questions, the application is able to introduce the user to places around America they would enjoy but never would have thought of.</p>
+             </md-card-content>
+             <md-card-footer class="md-actions"  layout="row" layout-align="center">
+             </md-card-footer>
+          </md-card>
+          <md-card flex="30" flex-sm="80" flex-xs="80" flex-md="30" onclick="window.open('http://tiffanyrossyrobinson.github.io/DayFourResponsive/',target='_blank');">
+              <div flex="100" layout="column" class="aCard cardImage3"></div>
+              <div flex="100" layout="column" class="topOfCard">
+                <h4>Powell Peralta</h4>
+              </div>
+             <md-card-content flex="100" layout="column">
+               <p>A layout of a Powell Peralta site that uses HTML and CSS to create a responsive webpage.</p>
+             </md-card-content>
+             <md-card-footer class="md-actions"  layout="row" layout-align="center">
+             </md-card-footer>
+          </md-card>
+        </div>
+        <div class="aDiv" layout="row" flex="100">
+              <div flex="100" class="sectionScroll" ng-click="GoTo('contactMe')"><md-button class="scrollButton">Contact Me!</md-button></div>
+        </div>
+      </div>
+
+      <div flex="100" id="contactMe" class="sectionBox" layout="row" layout-sm="column">
+        <div layout="row" class="messages" flex="100">
+              <div flex="60" flex-md="50" flex-sm="50" class="sectionTitle"><h2>Contact Me!</h2></div>
+        </div>
+
+        <div class="messageInfo boxControl" flex="100" layout="row" layout-sm="column">
+          <div flex="40" flex-sm="100" flex-xs="100" layout="column" layout-sm="row" class="contactMethods">
+              <div class="contactBlock" flex="90" layout-sm="column" layout="row" ng-click="SendEmail()">
+                  <div flex="40" flex-sm="100" flex-xs="100" class="icon" layout-align="center center">
+                    <i class="icon-envelope icon-4x"></i>
+                  </div>
+                  <div flex="60" flex-sm="100" class="latText" layout-align="center center">
+                    <h6>Send Email:</h6>
+                    <p>trossys@gmail.com</p>
+                  </div>
+              </div>
+
+              <div class="contactBlock" flex="90" layout-sm="column" layout="row" onclick="window.location.href = 'tel:9152596088';">
+                    <div flex="40" flex-sm="100" flex-xs="100" class="icon" layout-align="center center">
+                      <i class="icon-phone icon-4x"></i>
+                    </div>
+                    <div flex="60" flex-sm="100" class="latText" layout-align="center center">
+                      <h6>Call:</h6>
+                      <p>915.259.6088</p>
+                    </div>
+                </div>
+
+              <div class="contactBlock" onclick="window.open('https://www.linkedin.com/pub/tiffany-robinson/102/774/787',target='_blank');" flex="90" layout-sm="column" layout="row">
+                  <div flex="40" flex-sm="100" flex-xs="100" class="icon" layout-align="center center">
+                    <i class="icon-linkedin icon-4x"></i>
+                  </div>
+                  <div flex="60" flex-sm="100" class="latText" layout-align="center center">
+                    <h6>LinkedIn</h6>
+                    <p>Connect on LinkedIn</p>
+                  </div>
+              </div>
+
+              <div onclick="window.open('https://github.com/tiffanyRossyRobinson',target='_blank');" class="contactBlock" flex="90" layout-sm="column" layout="row">
+                  <div flex="40" flex-sm="100" flex-xs="100" class="icon" layout-align="center center">
+                    <i class="icon-github-sign icon-4x"></i>
+                  </div>
+                  <div flex="60" flex-sm="100" class="latText" layout-align="center center">
+                    <h6>GitHub:</h6>
+                    <p>Follow on GitHub</p>
+                  </div>
+              </div>
+          </div>
+
+          <div flex="60" flex-sm="100" hide-sm hide-xs class="chats">
+            <h4 class="reviews">Testimonies:</h4>
+            <div layout="row" class="aMessage" layout-align="start center" flex="100">
+              <div flex="15" class="daPicture"><h5> Lucius Nelson: Front-End Web Developer</h5></div>
+              <div flex="70" class="daMessage" > <p>Unbeknownst to her colleagues, she is able to learn and tackle complex problems at rates previously thought impossible for the human mind.</p></div>
+            </div>
+            <div layout="row" class="aMessage" layout-align="end center" flex="100">
+              <div flex="70" class="daMessage"><p>Her ability to work through problems and come up with creative solutions is nothing short of amazing.</p></div>
+              <div flex="15" class="daPicture" layout-align="center right"><h5>Trevor Glass: Front-End Web Developer</h5></div>
+            </div>
+            <div layout="row" class="aMessage" layout-align="start center" flex="100">
+              <div flex="15" class="daPicture" ><h5>Jason Groce: Front-End Web Developer</h5></div>
+              <div flex="70" class="daMessage" ><p>She was easy to work with and made the project go smoothly, and it put me at ease that she was on the team.</p></div>
+            </div>
           </div>
         </div>
-    </div>
 
-</section>
+      </div>
+
+      <div flex="100" layout="row" class="footer">
+        <div class="footerData" layout="row">
+            <div flex="25" class="contactBlock2" ng-click="SendEmail()">
+                <div class="icon2">
+                  <i class="icon-envelope icon-4x"></i>
+                </div>
+            </div>
+
+            <div flex="25" class="contactBlock2" onclick="window.location.href = 'tel:9152596088';">
+              <div class="icon2">
+                  <i class="icon-phone icon-4x"></i>
+              </div>
+            </div>
+
+            <div onclick="window.open('https://www.linkedin.com/pub/tiffany-robinson/102/774/787',target='_blank');" flex="25" class="contactBlock2">
+              <div class="icon2">
+                  <i class="icon-linkedin icon-4x"></i>
+              </div>
+            </div>
+
+            <div onclick="window.open('https://github.com/tiffanyRossyRobinson',target='_blank');" flex="25" class="contactBlock2">
+              <div class="icon2">
+                  <i class="icon-github-sign icon-4x"></i>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </md-content>
+</div>
