@@ -5,6 +5,7 @@
     .module('tiffany', [
       'ngRoute',
       'ngAnimate',
+      'ui.bootstrap',
       'ngMaterial'
     ])
     .config(function ($routeProvider) {
