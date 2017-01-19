@@ -1,0 +1,29 @@
+{
+  "name": "portfolio",
+  "description": "My webpage portfolio",
+  "main": "index.js",
+  "authors": [
+    "Tiffany Robinson"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/tiffanyRossyRobinson/tiffanyRossyRobinson.github.io",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-material": "~1.1.1",
+    "angular-bootstrap": "~0.13.3",
+    "angular-route": "~1.4.4",
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4",
+    "animate.css": "~3.5.2",
+    "node-sass": "^4.3.0",
+    "underscore": "~1.8.3",
+    "wow": "~1.1.2"
+  }
+}

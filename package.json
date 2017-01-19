@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My webpage portfolio",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiffanyRossyRobinson/tiffanyRossyRobinson.github.io.git"
+  },
+  "author": "Tiffany Robinson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tiffanyRossyRobinson/tiffanyRossyRobinson.github.io/issues"
+  },
+  "homepage": "https://github.com/tiffanyRossyRobinson/tiffanyRossyRobinson.github.io#readme"
+}
