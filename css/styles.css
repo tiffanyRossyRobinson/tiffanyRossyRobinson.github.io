@@ -70,6 +70,7 @@
         color: #003366; }
   .content .allStuff {
     width: 90%;
+    display:block;
     margin-left: auto;
     margin-right: auto;
     background-color: #f0f0f0; }
