@@ -58,7 +58,7 @@
       margin-right: auto;
       text-align: center;
       margin-top: 150px;
-      z-index: 15;
+      z-index: 3;
       border: 2px solid white; }
       .content .image .dashButton .nameButton {
         font-weight: bolder;
